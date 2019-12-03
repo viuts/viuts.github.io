@@ -1,0 +1,19 @@
+{
+  "name": "resume",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "jsonresume-theme-eloquent": "^4.1.0",
+    "resume-cli": "^1.2.7"
+  },
+  "scripts": {
+    "generate": "export RESUME_THEME=jsonresume-theme-eloquent && npm run generate:pdf && npm run generate:html",
+    "generate:pdf": "resume export ./docs/resume.pdf --theme $RESUME_THEME",
+    "generate:html": "resume export ./docs/index.html --theme $RESUME_THEME",
+    "generate:theme": "resume export docs/resume.pdf --theme "
+  },
+  "author": "",
+  "license": "ISC"
+}
