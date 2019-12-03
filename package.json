@@ -10,9 +10,9 @@
   },
   "scripts": {
     "generate": "export RESUME_THEME=jsonresume-theme-eloquent && npm run generate:pdf && npm run generate:html",
-    "generate:pdf": "resume export ./docs/resume.pdf --theme $RESUME_THEME",
-    "generate:html": "resume export ./docs/index.html --theme $RESUME_THEME",
-    "generate:theme": "resume export docs/resume.pdf --theme "
+    "generate:pdf": "resume export resume.pdf --theme $RESUME_THEME",
+    "generate:html": "resume export index.html --theme $RESUME_THEME",
+    "generate:theme": "resume export resume.pdf --theme "
   },
   "author": "",
   "license": "ISC"
