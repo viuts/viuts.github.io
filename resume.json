@@ -1,10 +1,10 @@
 {
   "basics": {
     "name": "Allen Ng",
-    "label": "Lead Software Developer",
+    "label": "Lead Software Enginneer",
     "picture": "https://media.licdn.com/dms/image/C4E03AQGo0D4z1tWYjw/profile-displayphoto-shrink_200_200/0?e=1580947200&v=beta&t=goeZMcHQMIMfFcVOQOjdLp8jo7PH_2DyXd_KSsm4Ak8",
     "email": "lukexng@gmail.com",
-    "summary": "I'm a fullstack developer that able work with frontend / backend / Infra / CI/CD / Machine & Deep learning / Mobile development. I am also curerntly a lead of a team. Currently interested in exploring more on deep learning",
+    "summary": "I'm a fullstack software enginneer that able work with frontend / backend / Infra / CI/CD / Machine & Deep learning / Mobile development. I am also curerntly a lead of a team. Currently interested in exploring more on deep learning",
     "location": {
       "city": "Hong Kong"
     },
@@ -21,29 +21,28 @@
   },
   "work": [{
       "company": "PICKUPP",
-      "position": "Lead Software Developer",
-      "startDate": "2017-07-15",
-      "endDate": "2018-02-28",
-      "summary": "ABC Cooking Studio is an internation chain cooking studio brand, operating in JP, KR, TW, CN, HK, etc.",
+      "position": "Lead Software Enginneer",
+      "startDate": "2019-09-01",
+      "summary": "Pickupp is a cloud sourced delivery platform startup. Operating in HK, SG, MY, VN.",
       "highlights": [
         "Team lead of operation product team, which mainly work on optimizing performance, workflows and matching process",
         "Handling feature request from business site, craft and implement feature in both backend and frontend",
         "Maintainance whole stack of the application",
         "Implemented data solution on aws using AWS S3, Glue, Redshift, Firehose, Pyspark",
-        "Lead Developer on one of the mobile app written in react-native",
+        "Lead Enginneer on one of the mobile app written in react-native",
         "Implemented own geocoding logic by segmentation and tagging of addresses",
         "Train Deep learning models to handle image classification"
       ]
     },
     {
       "company": "PICKUPP",
-      "position": "Software Developer",
-      "startDate": "2018-03-01",
+      "position": "Software Enginneer",
+      "startDate": "2019-03-01",
       "endDate": "2019-08-31"
     },
     {
       "company": "PICKUPP",
-      "position": "Junior Software Developer",
+      "position": "Junior Software Enginneer",
       "startDate": "2018-03-01",
       "endDate": "2019-01-31"
     },
@@ -64,7 +63,7 @@
       "company": "PESELY PACKING LTD.",
       "position": "Part-time Web Developer",
       "startDate": "2014-12-01",
-      "endDate": "2018-08-31",
+      "endDate": "2015-08-31",
       "summary": "Pesely is a tranditional company that selling packing materials, wanted to expand to online business.",
       "highlights": [
         "Deploy Magento online store",
