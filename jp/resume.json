@@ -1,0 +1,164 @@
+{
+  "basics": {
+    "name": "Allen Ng",
+    "label": "リードソフトエンジニア",
+    "picture": "https://media.licdn.com/dms/image/C4E03AQGo0D4z1tWYjw/profile-displayphoto-shrink_200_200/0?e=1580947200&v=beta&t=goeZMcHQMIMfFcVOQOjdLp8jo7PH_2DyXd_KSsm4Ak8",
+    "email": "lukexng@gmail.com",
+    "summary": "今は五人チームをリードしておて、各エリアを幅広くやっています。フロントエンド・バックエンド・インフラ・CI/CD・ディープランニング・モバイル開発などをやっています。最近は特にディープランニングに興味を持っています。",
+    "location": {
+      "city": "香港"
+    },
+    "profiles": [{
+        "network": "LinkedIn",
+        "url": "https://www.linkedin.com/in/allen-ng-00768882/"
+      },
+      {
+        "network": "Github",
+        "username": "viuts",
+        "url": "https://github.com/viuts"
+      }
+    ]
+  },
+  "work": [{
+      "company": "PICKUPP",
+      "position": "リードソフトエンジニア",
+      "startDate": "2019-09-01",
+      "summary": "PICKUPPはクラウドソースのデリバリープラットフォームで、現在四カ国で展開しています。",
+      "highlights": [
+        "オペレーションプロダクトチームのリード。主にプロセスの改善、アルゴリズムの最適化などやっています",
+        "ビジネスサイドからのフィチャーリクエスト収集、クラフト、MVPの設計、チームへ分担、コードレビューまでやっています",
+        "システムおよびインフラのモニタリング、デバッグ、スケールおよび最適化",
+        "データレイクの設計および実行、主にAWS　S3/GLUE/FIREHOSE/PYSPARK/REDSHIFTを使っています",
+        "あるREACT NATIVEのアプリをリードして開発、倉庫の管理として使っています",
+        "自社の用のGEOCODINGアルゴリズムを設計し開発、コンプレクスのアドレス（香港は場合は中英混合）なども対応",
+        "モバイルアプリ用のイメージクラスフィケーションモデルをトレインし運用"
+      ]
+    },
+    {
+      "company": "PICKUPP",
+      "position": "ソフトエンジニア",
+      "startDate": "2019-03-01",
+      "endDate": "2019-08-31"
+    },
+    {
+      "company": "PICKUPP",
+      "position": "ジュニアソフトエンジニア",
+      "startDate": "2018-03-01",
+      "endDate": "2019-01-31"
+    },
+    {
+      "company": "ABC COOKING STUDIO HONG KONG LTD.",
+      "position": "ITシステムデベロッパー",
+      "startDate": "2017-07-15",
+      "endDate": "2018-02-28",
+      "summary": "ABC　COOKING　STUDIOは日本から始め、現在は東南アジアなどでもスタジオを展開しています",
+      "highlights": [
+        "香港や他の国のインフラを管理、KUBERNETESの導入",
+        "現存のアプリケーションをNODEJSとVUEJSで書き換えす"
+      ]
+    },
+    {
+      "company": "PESELY PACKING LTD.",
+      "position": "パートタイムデベロッパー",
+      "startDate": "2014-12-01",
+      "endDate": "2015-08-31",
+      "summary": "PESELYは比較的に伝統な会社で、E-COMMERCEの導入ため、新たプロジェクトを発案した際に加入",
+      "highlights": [
+        "MAGENTOストアのデプロイ",
+        "バックエンドシステムの開発、現存の会社システムとMAGENTOの導出や導入などのツールを作成"
+      ]
+    }
+  ],
+  "education": [{
+    "institution": "THE HONG KONG POLYTECHNIC UNIVERSITY",
+    "area": "Computing (Enterprise Information System)",
+    "studyType": "Bachelor",
+    "startDate": "2013-09-01",
+    "endDate": "2017-08-31"
+  }],
+  "skills": [{
+      "name": "フロントエンド",
+      "level": "Master",
+      "keywords": [
+        "HTML",
+        "CSS",
+        "Javascript",
+        "React",
+        "Vue",
+        "Reac Native"
+      ]
+    },
+    {
+      "name": "バックエンド",
+      "level": "Master",
+      "keywords": [
+        "Node.js",
+        "golang",
+        "PHP",
+        "Python",
+        "ORM",
+        "Relational / Documents DB",
+        "Redis"
+      ]
+    },
+    {
+      "name": "インフラ",
+      "level": "Master",
+      "keywords": [
+        "AWS",
+        "GCP",
+        "Firebase",
+        "Kubernetes"
+      ]
+    },
+    {
+      "name": "CI/CD",
+      "level": "Master",
+      "keywords": [
+        "CircleCI",
+        "Jenkins",
+        "Bitbucket pipeline"
+      ]
+    },
+    {
+      "name": "ディープランニング",
+      "level": "Master",
+      "keywords": [
+        "Pytorch",
+        "fastai"
+      ]
+    }
+  ],
+  "languages": [{
+      "language": "広東語",
+      "fluency": "ネイティブ"
+    },
+    {
+      "language": "英語",
+      "fluency": "ビジネスレベル"
+    },
+    {
+      "language": "中国語",
+      "fluency": "ビジネスレベル"
+    },
+    {
+      "language": "日本語",
+      "fluency": "ビジネスレベル"
+    }
+  ],
+  "interests": [{
+      "name": "インドア",
+      "keywords": [
+        "ゲーム",
+        "ドラマと映画鑑賞"
+      ]
+    },
+    {
+      "name": "アウトドア",
+      "keywords": [
+        "撮影",
+        "旅行"
+      ]
+    }
+  ]
+}

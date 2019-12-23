@@ -12,7 +12,8 @@
     "generate": "export RESUME_THEME=jsonresume-theme-eloquent && npm run generate:pdf && npm run generate:html",
     "generate:pdf": "resume export resume.pdf --theme $RESUME_THEME",
     "generate:html": "resume export index.html --theme $RESUME_THEME",
-    "generate:theme": "resume export resume.pdf --theme "
+    "generate:theme": "resume export resume.pdf --theme",
+    "generate:jp": "export RESUME_THEME=jsonresume-theme-eloquent && cd jp && resume export jp.html --theme $RESUME_THEME && resume export jp.pdf --theme $RESUME_THEME && mv jp.html ../jp.html && mv jp.pdf ../jp.pdf"
   },
   "author": "",
   "license": "ISC"
