@@ -2,7 +2,7 @@
   "basics": {
     "name": "Allen Ng",
     "label": "リードソフトエンジニア",
-    "picture": "https://media.licdn.com/dms/image/C4E03AQGo0D4z1tWYjw/profile-displayphoto-shrink_200_200/0?e=1580947200&v=beta&t=goeZMcHQMIMfFcVOQOjdLp8jo7PH_2DyXd_KSsm4Ak8",
+    "picture": "https://media-exp1.licdn.com/dms/image/C4E03AQGo0D4z1tWYjw/profile-displayphoto-shrink_200_200/0?e=1602115200&v=beta&t=8e7PHswTxJEZK0KkGKpy87a_uPXOhMPiv9LB0HoYBlo",
     "email": "lukexng@gmail.com",
     "summary": "今は五人チームをリードしておて、各エリアを幅広くやっています。フロントエンド・バックエンド・インフラ・CI/CD・ディープランニング・モバイル開発などをやっています。最近は特にディープランニングに興味を持っています。",
     "location": {
@@ -19,7 +19,20 @@
       }
     ]
   },
-  "work": [{
+  "work": [
+    {
+      "company": "Zeals",
+      "position": "ソフトウェアエンジニア",
+      "startDate": "2020-04-01",
+      "summary": "Zealsはチャットボットコマースの業界リーダーです。",
+      "highlights": [
+        "デイリーのインフラ整備、CI/CD継続的に向上、機械学習のパイプラインや分析基盤、開発者のワークフロー向上",
+        "マイクロサービス開発を参加、一つのマイクロサービスを全て実装",
+        "外国籍エンジニア採用担当、SREとGoエンジニアのテックインタビューを担当",
+        "新しいプロダクトの初期メンバーとして開発"
+      ]
+    },
+    {
       "company": "PICKUPP",
       "position": "リードソフトエンジニア",
       "startDate": "2019-09-01",
