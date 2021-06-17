@@ -2,7 +2,7 @@
   "basics": {
     "name": "Allen Ng",
     "label": "Lead Software Enginneer",
-    "picture": "https://media-exp1.licdn.com/dms/image/C4E03AQGo0D4z1tWYjw/profile-displayphoto-shrink_200_200/0?e=1602115200&v=beta&t=8e7PHswTxJEZK0KkGKpy87a_uPXOhMPiv9LB0HoYBlo",
+    "picture": "https://raw.githubusercontent.com/viuts/viuts.github.io/master/static/img/icon.png?token=AD2LWKJDFYXAQHHTK3M4KY3AZNKCM",
     "email": "lukexng@gmail.com",
     "summary": "I'm a fullstack software enginneer that able work with frontend / backend / Infra / CI/CD / Machine & Deep learning / Mobile development. I am also curerntly a lead of a team. Currently interested in exploring more on deep learning",
     "location": {
@@ -22,8 +22,24 @@
   "work": [
     {
       "company": "Zeals",
+      "position": "Head of microservices",
+      "startDate": "2021-01-01",
+      "summary": "Zeals is industry leader of chatbot commerce in Japan",
+      "highlights": [
+        "Managing a team of 10 which is a combination of Japanese and English speakers, helping to bridge the communication gap between the team and managing overall tasks in the team",
+        "Handling High level design and system architecture",
+        "Working closely with CTO to develop on technical strategies and how to bring product requirements into achievable goals",
+        "Hands-on tasks on building microservices, including protobuf definition, implementation of the services in grpc and golang",
+        "Hands-on tasks on handling infrastructure tasks, working mainly of CI/CD and IaaS to ensure the infrastructure is automated and manageable, including kubernetes, pulumi, circleci, argocd, etc.",
+        "Handling recruitment on both golang engineer and SRE engineer, have been doing technical interview for more than 50 candidates in the past year.",
+        "Driven on test automation on both unit tests inside the microservices, E2E tests across microservices and E2E tests for having headless browser to simulating actual user behavior"
+      ]
+    },
+    {
+      "company": "Zeals",
       "position": "Software Enginneer",
       "startDate": "2020-04-01",
+      "endDate": "2020-12-31",
       "summary": "Zeals is industry leader of chatbot commerce in Japan",
       "highlights": [
         "Handling daily infrastrcture requirements and continuously improving CI/CD, monitoring, machine learning pipelines and development workflows",

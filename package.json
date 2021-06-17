@@ -13,7 +13,8 @@
     "generate:pdf": "resume export resume.pdf --theme $RESUME_THEME",
     "generate:html": "resume export index.html --theme $RESUME_THEME",
     "generate:theme": "resume export resume.pdf --theme",
-    "generate:jp": "export RESUME_THEME=jsonresume-theme-eloquent && cd jp && resume export jp.html --theme $RESUME_THEME && resume export jp.pdf --theme $RESUME_THEME && mv jp.html ../jp.html && mv jp.pdf ../jp.pdf"
+    "generate:jp": "export RESUME_THEME=jsonresume-theme-eloquent && cd jp && resume export jp.html --theme $RESUME_THEME && resume export jp.pdf --theme $RESUME_THEME && mv jp.html ../jp.html && mv jp.pdf ../jp.pdf",
+    "publish:github": "PUBLIC_URL=https://viuts.github.io/viuts.github.io/ npm run generate git add . && git commit -m 'Release Github Page' && git push -u origin master"
   },
   "author": "",
   "license": "ISC"
