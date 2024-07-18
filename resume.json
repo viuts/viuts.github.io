@@ -24,7 +24,7 @@
       "company": "MetLife",
       "position": "Lead Infrastructure Engineer",
       "startDate": "2021-09-01",
-      "summary": "MetLife is a international insurance company.",
+      "summary": "MetLife is an international insurance company.",
       "highlights": [
         "Managing a small team which focusing on providing internal automation platform such as Chef, Ansible and Terraform to internal users.",
         "Onboard and coach other teams to work in agile and modern IaC practice and different automation tools.",
