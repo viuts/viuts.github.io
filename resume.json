@@ -2,7 +2,7 @@
   "basics": {
     "name": "Allen Ng",
     "label": "Lead Software Enginneer",
-    "picture": "https://raw.githubusercontent.com/viuts/viuts.github.io/master/static/img/icon.png?token=AD2LWKJDFYXAQHHTK3M4KY3AZNKCM",
+    "picture": "https://media.licdn.com/dms/image/C5603AQGOAOhV9rqdhQ/profile-displayphoto-shrink_800_800/0/1617544187939?e=1726704000&v=beta&t=RoBZHZTBs2GBJLbaiNu6hkqHmfOfb14w4xCcsYa79X0",
     "email": "lukexng@gmail.com",
     "summary": "I'm a fullstack software enginneer that able work with frontend / backend / Infra / CI/CD / Machine & Deep learning / Mobile development. I am also curerntly a lead of a team. Currently interested in exploring more on deep learning",
     "location": {
@@ -21,9 +21,23 @@
   },
   "work": [
     {
+      "company": "MetLife",
+      "position": "Lead Infrastructure Engineer",
+      "startDate": "2021-09-01",
+      "summary": "MetLife is a international insurance company.",
+      "highlights": [
+        "Managing a small team which focusing on providing internal automation platform such as Chef, Ansible and Terraform to internal users.",
+        "Onboard and coach other teams to work in agile and modern IaC practice and different automation tools.",
+        "Created fully automated server provisioning with terraform and packer together with golang to quickly scales servers on-premises data centers and Azure",
+        "Collaborate and hands-on implementation with many teams to automate legacy manual tasks using Chef and Ansible.",
+        "Managing all Japan server footprints by optimizing Chef, Ensuring all machines match with the security standards."
+      ]
+    },
+    {
       "company": "Zeals",
       "position": "Head of microservices",
       "startDate": "2021-01-01",
+      "endDate": "2021-08-31",
       "summary": "Zeals is industry leader of chatbot commerce in Japan",
       "highlights": [
         "Managing a team of 10 which is a combination of Japanese and English speakers, helping to bridge the communication gap between the team and managing overall tasks in the team",

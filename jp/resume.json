@@ -2,9 +2,9 @@
   "basics": {
     "name": "Allen Ng",
     "label": "リードソフトエンジニア",
-    "picture": "https://media-exp1.licdn.com/dms/image/C4E03AQGo0D4z1tWYjw/profile-displayphoto-shrink_200_200/0?e=1602115200&v=beta&t=8e7PHswTxJEZK0KkGKpy87a_uPXOhMPiv9LB0HoYBlo",
+    "picture": "https://media.licdn.com/dms/image/C5603AQGOAOhV9rqdhQ/profile-displayphoto-shrink_800_800/0/1617544187939?e=1726704000&v=beta&t=RoBZHZTBs2GBJLbaiNu6hkqHmfOfb14w4xCcsYa79X0",
     "email": "lukexng@gmail.com",
-    "summary": "今は五人チームをリードしておて、各エリアを幅広くやっています。フロントエンド・バックエンド・インフラ・CI/CD・ディープランニング・モバイル開発などをやっています。最近は特にディープランニングに興味を持っています。",
+    "summary": "今はチームをリードしておて、各エリアを幅広くやっています。フロントエンド・バックエンド・インフラ・CI/CD・ディープランニング・モバイル開発などをやっています。最近は特にディープランニングに興味を持っています。",
     "location": {
       "city": "香港"
     },
@@ -21,9 +21,23 @@
   },
   "work": [
     {
+      "company": "MetLife",
+      "position": "リードインフラストラクチャエンジニア",
+      "startDate": "2021-09-01",
+      "summary": "MetLifeは国際的な保険会社です。",
+      "highlights": [
+        "内部ユーザー向けにChef、Ansible、Terraformなどの内部オートメーションプラットフォームを提供することに注力している小規模なチームを管理。",
+        "他のチームにアジャイルと最新のIaC実践およびさまざまなオートメーションツールを導入し、指導。",
+        "TerraformとPackerを使用してGolangとともに完全に自動化されたサーバープロビジョニングを作成し、オンプレミスのデータセンターとAzureでサーバーを迅速にスケール。",
+        "ChefとAnsibleを使用して多くのチームと協力し、レガシーの手動タスクを自動化するための実装をハンズオンで行う。",
+        "Chefを最適化し、日本のすべてのサーバーフットプリントを管理し、すべてのマシンがセキュリティ標準に一致するようにする。"
+      ]
+    },
+    {
       "company": "Zeals",
       "position": "マイクロサービス責任者",
       "startDate": "2021-01-01",
+      "endDate": "2021-08-31",
       "summary": "Zealsはチャットボットコマースの業界リーダーです。",
       "highlights": [
         "日本人と外国人が混ぜたマイクロサービスチーム（約10人）を管理し、全体のタスク管理や意思疎通をしております。",
