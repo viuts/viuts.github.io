@@ -30,7 +30,8 @@
         "Onboard and coach other teams to work in agile and modern IaC practice and different automation tools.",
         "Created fully automated server provisioning with terraform and packer together with golang to quickly scales servers on-premises data centers and Azure",
         "Collaborate and hands-on implementation with many teams to automate legacy manual tasks using Chef and Ansible.",
-        "Managing all Japan server footprints by optimizing Chef, Ensuring all machines match with the security standards."
+        "Managing all Japan server footprints by optimizing Chef, Ensuring all machines match with the security standards.",
+        "Migrated legacy way of monitoring / reporting  to match with the latest industry standard with various tools including Splunk"
       ]
     },
     {
@@ -132,7 +133,7 @@
         "Javascript",
         "React",
         "Vue",
-        "Reac Native"
+        "React Native"
       ]
     },
     {
@@ -143,9 +144,7 @@
         "golang",
         "PHP",
         "Python",
-        "ORM",
-        "Relational / Documents DB",
-        "Redis"
+        "ORM"
       ]
     },
     {
@@ -155,7 +154,17 @@
         "AWS",
         "GCP",
         "Firebase",
-        "Kubernetes"
+        "Kubernetes",
+        "Relational / Documents DB",
+        "Redis",
+        "MQ",
+        "Distributed DB",
+        "Chef",
+        "Terraform",
+        "Pulumi",
+        "Ansible",
+        "Datadog",
+        "Splunk"
       ]
     },
     {
@@ -164,15 +173,21 @@
       "keywords": [
         "CircleCI",
         "Jenkins",
-        "Bitbucket pipeline"
+        "Bitbucket pipeline",
+        "Github Actions",
+        "ArgoCD",
+        "Azure Pipelines"
       ]
     },
     {
-      "name": "Deep learning",
-      "level": "Master",
+      "name": "AI",
+      "level": "Intermediate",
       "keywords": [
         "Pytorch",
-        "fastai"
+        "fastai",
+        "tensorflow",
+        "LLM",
+        "Prompt Engineering"
       ]
     }
   ],

@@ -22,15 +22,16 @@
   "work": [
     {
       "company": "MetLife",
-      "position": "リードインフラストラクチャエンジニア",
+      "position": "リードインフラエンジニア",
       "startDate": "2021-09-01",
       "summary": "MetLifeは国際的な保険会社です。",
       "highlights": [
         "内部ユーザー向けにChef、Ansible、Terraformなどの内部オートメーションプラットフォームを提供することに注力している小規模なチームを管理。",
-        "他のチームにアジャイルと最新のIaC実践およびさまざまなオートメーションツールを導入し、指導。",
-        "TerraformとPackerを使用してGolangとともに完全に自動化されたサーバープロビジョニングを作成し、オンプレミスのデータセンターとAzureでサーバーを迅速にスケール。",
-        "ChefとAnsibleを使用して多くのチームと協力し、レガシーの手動タスクを自動化するための実装をハンズオンで行う。",
-        "Chefを最適化し、日本のすべてのサーバーフットプリントを管理し、すべてのマシンがセキュリティ標準に一致するようにする。"
+        "他のチームにアジャイルと最新のIaC実践およびさまざまなオートメーションツールを導入およびコーチング",
+        "TerraformとPackerを使用してGolangとともに完全に自動化されたサーバープロビジョニングを作成し、オンプレミスのデータセンターとAzureでサーバーを迅速にスケールできるようにしました。",
+        "ChefとAnsibleを使用して多くのチームと共に、レガシーの手動タスクを自動化するための実装しました。",
+        "Chefを駆使して、日本のすべてのサーバーフットプリントを管理し、すべてのマシンがセキュリティ標準に沿っていることを常時に監視および自動的に修正させました。",
+        "レガシーな監視/レポート方法をSplunkを含むさまざまなツールを使用して最新の業界標準に合わせて移行しました。"
       ]
     },
     {
@@ -128,7 +129,7 @@
         "Javascript",
         "React",
         "Vue",
-        "Reac Native"
+        "React Native"
       ]
     },
     {
@@ -139,9 +140,7 @@
         "golang",
         "PHP",
         "Python",
-        "ORM",
-        "Relational / Documents DB",
-        "Redis"
+        "ORM"
       ]
     },
     {
@@ -151,7 +150,17 @@
         "AWS",
         "GCP",
         "Firebase",
-        "Kubernetes"
+        "Kubernetes",
+        "Relational / Documents DB",
+        "Redis",
+        "MQ",
+        "Distributed DB",
+        "Chef",
+        "Terraform",
+        "Pulumi",
+        "Ansible",
+        "Datadog",
+        "Splunk"
       ]
     },
     {
@@ -160,7 +169,10 @@
       "keywords": [
         "CircleCI",
         "Jenkins",
-        "Bitbucket pipeline"
+        "Bitbucket pipeline",
+        "Github Actions",
+        "ArgoCD",
+        "Azure Pipelines"
       ]
     },
     {
@@ -168,7 +180,10 @@
       "level": "Master",
       "keywords": [
         "Pytorch",
-        "fastai"
+        "fastai",
+        "tensorflow",
+        "LLM",
+        "Prompt Engineering"
       ]
     }
   ],
