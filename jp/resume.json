@@ -1,12 +1,12 @@
 {
   "basics": {
     "name": "Allen Ng",
-    "label": "リードソフトエンジニア",
-    "picture": "https://media.licdn.com/dms/image/C5603AQGOAOhV9rqdhQ/profile-displayphoto-shrink_800_800/0/1617544187939?e=1726704000&v=beta&t=RoBZHZTBs2GBJLbaiNu6hkqHmfOfb14w4xCcsYa79X0",
+    "label": "リードソフトウェアエンジニア",
+    "picture": "https://media.licdn.com/dms/image/v2/D4E03AQGOERhPBpYhWw/profile-displayphoto-shrink_100_100/B4EZdVXZm1HgAU-/0/1749483888367?e=1761782400&v=beta&t=asWq6Es4N10elnxcbk7ZbwWII_8RRm6WctnsZzMrgQk",
     "email": "lukexng@gmail.com",
-    "summary": "今はチームをリードしておて、各エリアを幅広くやっています。フロントエンド・バックエンド・インフラ・CI/CD・ディープランニング・モバイル開発などをやっています。最近は特にディープランニングに興味を持っています。",
+    "summary": "フルスタックソフトウェアエンジニアとして、フロントエンド・バックエンド・インフラ・CI/CD・機械学習・ディープラーニング・モバイル開発など幅広い分野での経験があります。現在はチームリーダーとしても活動しており、特にディープラーニング分野の探求に興味を持っています。",
     "location": {
-      "city": "香港"
+      "city": "東京"
     },
     "profiles": [{
         "network": "LinkedIn",
@@ -64,9 +64,10 @@
     },
     {
       "company": "PICKUPP",
-      "position": "リードソフトエンジニア",
+      "position": "リードソフトウェアエンジニア",
       "startDate": "2019-09-01",
-      "summary": "PICKUPPはクラウドソースのデリバリープラットフォームで、現在四カ国で展開しています。",
+      "endDate": "2020-03-31",
+      "summary": "Pickuppはクラウドソースのデリバリープラットフォームスタートアップです。香港、シンガポール、マレーシア、ベトナムで事業を展開しています。",
       "highlights": [
         "オペレーションプロダクトチームのリード。主にプロセスの改善、アルゴリズムの最適化などやっています",
         "ビジネスサイドからのフィチャーリクエスト収集、クラフト、MVPの設計、チームへ分担、コードレビューまでやっています",
@@ -175,8 +176,8 @@
       ]
     },
     {
-      "name": "ディープランニング",
-      "level": "Master",
+      "name": "AI",
+      "level": "Intermediate",
       "keywords": [
         "Pytorch",
         "fastai",
