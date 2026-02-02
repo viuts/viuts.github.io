@@ -52,6 +52,34 @@
       margin-bottom: 16px;
     }
 
+    /* Profile picture */
+    .profile-header {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      margin-bottom: 16px;
+    }
+
+    @media (min-width: 600px) {
+      .profile-header {
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 24px;
+      }
+    }
+
+    .profile-pic {
+      width: 80px;
+      height: 80px;
+      border-radius: 8px;
+      object-fit: cover;
+      border: 2px solid var(--border);
+    }
+
+    .profile-info {
+      flex: 1;
+    }
+
     h2 {
       font-family: var(--font-mono);
       font-size: 1.1rem;
@@ -117,9 +145,23 @@
 
     /* Experience items */
     .experience-item {
-      margin-bottom: 24px;
+      margin-bottom: 32px;
       page-break-inside: avoid;
       break-inside: avoid;
+    }
+
+    .company-header {
+      margin-bottom: 16px;
+    }
+
+    .position-block {
+      margin-bottom: 16px;
+      padding-left: 16px;
+      border-left: 2px solid var(--code-bg);
+    }
+
+    .position-block:last-child {
+      margin-bottom: 0;
     }
 
     .item-header {
@@ -301,18 +343,23 @@
 
   <!-- Header -->
   <header>
-    <h1># Allen Ng</h1>
-    <div class="label">リードソフトウェアエンジニア</div>
+    <div class="profile-header">
+      <img src="https://media.licdn.com/dms/image/v2/D4E03AQGOERhPBpYhWw/profile-displayphoto-shrink_100_100/B4EZdVXZm1HgAU-/0/1749483888367?e&#x3D;1771459200&amp;v&#x3D;beta&amp;t&#x3D;36xBc7LfqLAy9nABZd7wzvRdIaneBpjIfDNq5DTy1ew" alt="Allen Ng" class="profile-pic">
+      <div class="profile-info">
+        <h1># Allen Ng</h1>
+        <div class="label">リードソフトウェアエンジニア</div>
+      </div>
+    </div>
 
     <div class="contact-info">
       <a href="mailto:lukexng@gmail.com" class="contact-item">lukexng@gmail.com</a>
-      <span class="contact-item">東京, </span>
+      <span class="contact-item">東京</span>
       <a href="https://www.linkedin.com/in/allen-ng-00768882/" target="_blank" class="contact-item">LinkedIn</a>
       <a href="https://github.com/viuts" target="_blank" class="contact-item">Github</a>
     </div>
 
     <div class="summary">
-      フルスタックソフトウェアエンジニアとして、フロントエンド・バックエンド・インフラ・CI/CD・機械学習・ディープラーニング・モバイル開発など幅広い分野での経験があります。現在はチームリーダーとしても活動しており、特にディープラーニング分野の探求に興味を持っています。
+      フルスタックエンジニアとして、フロントエンド・バックエンド・インフラ・CI/CD・機械学習・ディープラーニング・モバイル開発まで幅広い領域の開発経験を有しています。現在はチームリーダーとしてマネジメント業務にも従事しており、特にAI技術の探求に注力しています。
     </div>
   </header>
 
@@ -320,137 +367,154 @@
   <section>
     <h2>## Experience</h2>
     <div class="experience-item">
-      <div class="item-header">
-        <div>
-          <h3 class="item-title">### リードインフラエンジニア</h3>
-          <div class="item-company">MetLife</div>
-        </div>
-        <div class="item-date">
-          September 2021 — Present
-        </div>
+      <div class="company-header">
+        <h3 class="item-title">### MetLife</h3>
       </div>
-      <p class="item-summary">MetLifeは国際的な保険会社です。</p>
-      <ul>
-        <li>内部ユーザー向けにChef、Ansible、Terraformなどの内部オートメーションプラットフォームを提供することに注力している小規模なチームを管理。</li>
-        <li>他のチームにアジャイルと最新のIaC実践およびさまざまなオートメーションツールを導入およびコーチング</li>
-        <li>TerraformとPackerを使用してGolangとともに完全に自動化されたサーバープロビジョニングを作成し、オンプレミスのデータセンターとAzureでサーバーを迅速にスケールできるようにしました。</li>
-        <li>ChefとAnsibleを使用して多くのチームと共に、レガシーの手動タスクを自動化するための実装しました。</li>
-        <li>Chefを駆使して、日本のすべてのサーバーフットプリントを管理し、すべてのマシンがセキュリティ標準に沿っていることを常時に監視および自動的に修正させました。</li>
-      </ul>
-    </div>
-    <div class="experience-item">
-      <div class="item-header">
-        <div>
-          <h3 class="item-title">### マイクロサービス責任者</h3>
-          <div class="item-company">Zeals</div>
+      <div class="position-block">
+        <div class="item-header">
+          <div>
+            <div class="item-company">リードインフラエンジニア</div>
+          </div>
+          <div class="item-date">
+            September 2021 — Present
+          </div>
         </div>
-        <div class="item-date">
-          January 2021 — August 2021
-        </div>
-      </div>
-      <p class="item-summary">Zealsはチャットボットコマースの業界リーダーです。</p>
-      <ul>
-        <li>日本人と外国人が混ぜたマイクロサービスチーム（約10人）を管理し、全体のタスク管理や意思疎通をしております。</li>
-        <li>上流なシステムデザインや全体のアーキテクチャー考案</li>
-        <li>CTOと緊密に連携し、従来の技術的負債を返上しつつ、事業計画を基づき新機能の推進</li>
-        <li>マイクロサービスの実装、grpcやGolangが主に使用しています</li>
-        <li>インフラタスクの実行、例えばCI/CDの向上やIaaSを使用したインフラ管理などの管理、使っている技術はKubernetes,ArgoCD,pulumi,CircleCIなどです</li>
-        <li>外国籍エンジニア採用担当、SREとGoエンジニアのテックインタビューを担当、今まで五十人以上の候補者の方を面接していました。</li>
-        <li>マイクロサービスにおいてのテスト自動化の推進</li>
-      </ul>
-    </div>
-    <div class="experience-item">
-      <div class="item-header">
-        <div>
-          <h3 class="item-title">### ソフトウェアエンジニア</h3>
-          <div class="item-company">Zeals</div>
-        </div>
-        <div class="item-date">
-          April 2020 — December 2020
-        </div>
-      </div>
-      <p class="item-summary">Zealsはチャットボットコマースの業界リーダーです。</p>
-      <ul>
-        <li>デイリーのインフラ整備、CI/CD継続的に向上、機械学習のパイプラインや分析基盤、開発者のワークフロー向上</li>
-        <li>マイクロサービス開発を参加、一つのマイクロサービスを全て実装</li>
-        <li>外国籍エンジニア採用担当、SREとGoエンジニアのテックインタビューを担当</li>
-        <li>新しいプロダクトの初期メンバーとして開発</li>
-      </ul>
-    </div>
-    <div class="experience-item">
-      <div class="item-header">
-        <div>
-          <h3 class="item-title">### リードソフトウェアエンジニア</h3>
-          <div class="item-company">PICKUPP</div>
-        </div>
-        <div class="item-date">
-          September 2019 — March 2020
-        </div>
-      </div>
-      <p class="item-summary">Pickuppはクラウドソースのデリバリープラットフォームスタートアップです。香港、シンガポール、マレーシア、ベトナムで事業を展開しています。</p>
-      <ul>
-        <li>オペレーションプロダクトチームのリード。主にプロセスの改善、アルゴリズムの最適化などやっています</li>
-        <li>ビジネスサイドからのフィチャーリクエスト収集、クラフト、MVPの設計、チームへ分担、コードレビューまでやっています</li>
-        <li>システムおよびインフラのモニタリング、デバッグ、スケールおよび最適化</li>
-        <li>データレイクの設計および実行、主にAWS　S3/GLUE/FIREHOSE/PYSPARK/REDSHIFTを使っています</li>
-        <li>あるREACT NATIVEのアプリをリードして開発、倉庫の管理として使っています</li>
-        <li>自社の用のGEOCODINGアルゴリズムを設計し開発、コンプレクスのアドレス（香港は場合は中英混合）なども対応</li>
-        <li>モバイルアプリ用のイメージクラスフィケーションモデルをトレインし運用</li>
-      </ul>
-    </div>
-    <div class="experience-item">
-      <div class="item-header">
-        <div>
-          <h3 class="item-title">### ソフトエンジニア</h3>
-          <div class="item-company">PICKUPP</div>
-        </div>
-        <div class="item-date">
-          March 2019 — August 2019
-        </div>
+        <p class="item-summary">MetLifeは国際的な保険会社です。</p>
+        <ul>
+          <li>Chef、Ansible、Terraformなどの社内自動化プラットフォームの提供に注力する小規模チームのマネジメントを担当。</li>
+          <li>他チームに対しアジャイル開発手法、IaCベストプラクティス、各種自動化ツールの導入支援とコーチングを実施。</li>
+          <li>Terraform、Packer、Golangを活用した完全自動化されたサーバープロビジョニングシステムを構築し、オンプレミスおよびAzure環境での迅速なスケーリングを実現。</li>
+          <li>複数チームと協業し、ChefおよびAnsibleを用いたレガシーな手動オペレーションの自動化を推進。</li>
+          <li>Chefによる日本国内の全サーバー管理を統括し、セキュリティ標準への準拠を継続的に監視・自動修正。</li>
+        </ul>
       </div>
     </div>
     <div class="experience-item">
-      <div class="item-header">
-        <div>
-          <h3 class="item-title">### ジュニアソフトエンジニア</h3>
-          <div class="item-company">PICKUPP</div>
+      <div class="company-header">
+        <h3 class="item-title">### Zeals</h3>
+      </div>
+      <div class="position-block">
+        <div class="item-header">
+          <div>
+            <div class="item-company">マイクロサービス責任者</div>
+          </div>
+          <div class="item-date">
+            January 2021 — August 2021
+          </div>
         </div>
-        <div class="item-date">
-          March 2018 — January 2019
+        <p class="item-summary">Zealsはチャットボットコマースの業界リーダーです。</p>
+        <ul>
+          <li>日本人および外国籍エンジニアで構成される約10名のマイクロサービスチームをマネジメントし、チーム間のコミュニケーション促進とタスク管理を統括。</li>
+          <li>システムアーキテクチャの上流設計とマイクロサービス全体の技術的方針策定を担当。</li>
+          <li>CTOと緊密に連携し、技術的負債の解消と事業計画に基づく新機能開発を推進。</li>
+          <li>マイクロサービスの実装を担当。Protobuf定義、gRPC、Golangを使用したサービス開発。</li>
+          <li>Kubernetes、ArgoCD、Pulumi、CircleCIなどを活用したCI/CD改善およびIaaS基盤の管理を実施。</li>
+          <li>外国籍エンジニアの採用を担当。SREおよびGoエンジニアの技術面接を50名以上実施。</li>
+          <li>マイクロサービスにおけるテスト自動化を推進。ユニットテスト、E2Eテスト、ヘッドレスブラウザを用いたシナリオテストを実装。</li>
+        </ul>
+      </div>
+      <div class="position-block">
+        <div class="item-header">
+          <div>
+            <div class="item-company">ソフトウェアエンジニア</div>
+          </div>
+          <div class="item-date">
+            April 2020 — December 2020
+          </div>
+        </div>
+        <p class="item-summary">Zealsはチャットボットコマースの業界リーダーです。</p>
+        <ul>
+          <li>日常的なインフラ整備、CI/CDの継続的改善、機械学習パイプライン、データ分析基盤、開発ワークフローの最適化を担当。</li>
+          <li>Golangによるマイクロサービス開発に参加し、1つのマイクロサービスを単独で実装。</li>
+          <li>外国籍エンジニアの採用を担当。SREおよびGoエンジニアの技術面接を実施。</li>
+          <li>新規プロダクトの立ち上げメンバーとして開発に従事。</li>
+        </ul>
+      </div>
+    </div>
+    <div class="experience-item">
+      <div class="company-header">
+        <h3 class="item-title">### PICKUPP</h3>
+      </div>
+      <div class="position-block">
+        <div class="item-header">
+          <div>
+            <div class="item-company">リードソフトウェアエンジニア</div>
+          </div>
+          <div class="item-date">
+            September 2019 — March 2020
+          </div>
+        </div>
+        <p class="item-summary">Pickuppはクラウドソースのデリバリープラットフォームスタートアップです。香港、シンガポール、マレーシア、ベトナムで事業を展開しています。</p>
+        <ul>
+          <li>オペレーションプロダクトチームのリードとして、プロセス改善およびマッチングアルゴリズムの最適化を担当。</li>
+          <li>ビジネス要件のヒアリング、MVPの設計からチームへの業務分担、コードレビューまで一貫して実施。</li>
+          <li>システム全体およびインフラの監視、デバッグ、スケーリング、パフォーマンス最適化を実施。</li>
+          <li>AWS（S3、Glue、Firehose、PySpark、Redshift）を用いたデータレイクの設計・構築を担当。</li>
+          <li>倉庫管理用のReact Nativeアプリケーションの開発をリード。</li>
+          <li>複雑な住所（香港の中英混在表記など）に対応した自社用ジオコーディングアルゴリズムを設計・開発。</li>
+          <li>モバイルアプリ向け画像分類モデルの学習および運用を実施。</li>
+        </ul>
+      </div>
+      <div class="position-block">
+        <div class="item-header">
+          <div>
+            <div class="item-company">ソフトエンジニア</div>
+          </div>
+          <div class="item-date">
+            March 2019 — August 2019
+          </div>
+        </div>
+      </div>
+      <div class="position-block">
+        <div class="item-header">
+          <div>
+            <div class="item-company">ジュニアソフトエンジニア</div>
+          </div>
+          <div class="item-date">
+            March 2018 — January 2019
+          </div>
         </div>
       </div>
     </div>
     <div class="experience-item">
-      <div class="item-header">
-        <div>
-          <h3 class="item-title">### ITシステムデベロッパー</h3>
-          <div class="item-company">ABC COOKING STUDIO HONG KONG LTD.</div>
-        </div>
-        <div class="item-date">
-          July 2017 — February 2018
-        </div>
+      <div class="company-header">
+        <h3 class="item-title">### ABC COOKING STUDIO HONG KONG LTD.</h3>
       </div>
-      <p class="item-summary">ABC　COOKING　STUDIOは日本から始め、現在は東南アジアなどでもスタジオを展開しています</p>
-      <ul>
-        <li>香港や他の国のインフラを管理、KUBERNETESの導入</li>
-        <li>現存のアプリケーションをNODEJSとVUEJSで書き換えす</li>
-      </ul>
+      <div class="position-block">
+        <div class="item-header">
+          <div>
+            <div class="item-company">ITシステムデベロッパー</div>
+          </div>
+          <div class="item-date">
+            July 2017 — February 2018
+          </div>
+        </div>
+        <p class="item-summary">ABC Cooking Studioは日本発の料理教室チェーンで、現在は東南アジアなど国際的に事業展開しています。</p>
+        <ul>
+          <li>香港および他拠点のインフラを管理し、コンテナオーケストレーション(Kubernetes)を導入。</li>
+          <li>レガシーアプリケーションをNode.jsおよびVue.jsで再構築。</li>
+        </ul>
+      </div>
     </div>
     <div class="experience-item">
-      <div class="item-header">
-        <div>
-          <h3 class="item-title">### パートタイムデベロッパー</h3>
-          <div class="item-company">PESELY PACKING LTD.</div>
-        </div>
-        <div class="item-date">
-          December 2014 — August 2015
-        </div>
+      <div class="company-header">
+        <h3 class="item-title">### PESELY PACKING LTD.</h3>
       </div>
-      <p class="item-summary">PESELYは比較的に伝統な会社で、E-COMMERCEの導入ため、新たプロジェクトを発案した際に加入</p>
-      <ul>
-        <li>MAGENTOストアのデプロイ</li>
-        <li>バックエンドシステムの開発、現存の会社システムとMAGENTOの導出や導入などのツールを作成</li>
-      </ul>
+      <div class="position-block">
+        <div class="item-header">
+          <div>
+            <div class="item-company">パートタイムデベロッパー</div>
+          </div>
+          <div class="item-date">
+            December 2014 — August 2015
+          </div>
+        </div>
+        <p class="item-summary">Peselyは伝統的な梱包資材会社で、EC事業への進出を目指す新規プロジェクトに参画。</p>
+        <ul>
+          <li>Magentoを用いたECサイトの構築・デプロイを実施。</li>
+          <li>社内既存システムとMagentoを連携するバックエンドシステムを開発。</li>
+        </ul>
+      </div>
     </div>
   </section>
 
@@ -465,9 +529,11 @@
             <code class="skill-tag">HTML</code>
             <code class="skill-tag">CSS</code>
             <code class="skill-tag">Javascript</code>
+            <code class="skill-tag">TypeScript</code>
             <code class="skill-tag">React</code>
             <code class="skill-tag">Vue</code>
             <code class="skill-tag">React Native</code>
+            <code class="skill-tag">Flutter</code>
           </div>
         </div>
         <div class="skill-category">
@@ -478,6 +544,8 @@
             <code class="skill-tag">PHP</code>
             <code class="skill-tag">Python</code>
             <code class="skill-tag">ORM</code>
+            <code class="skill-tag">gRPC</code>
+            <code class="skill-tag">Protobuf</code>
           </div>
         </div>
         <div class="skill-category">
@@ -514,10 +582,10 @@
           <div class="skill-label">AI</div>
           <div class="skill-tags">
             <code class="skill-tag">Pytorch</code>
-            <code class="skill-tag">fastai</code>
             <code class="skill-tag">tensorflow</code>
             <code class="skill-tag">LLM</code>
             <code class="skill-tag">Prompt Engineering</code>
+            <code class="skill-tag">Agno</code>
           </div>
         </div>
       </section>

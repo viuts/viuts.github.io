@@ -1,14 +1,15 @@
 {
   "basics": {
     "name": "Allen Ng",
-    "label": "Lead Software Enginneer",
+    "label": "Lead Software Engineer",
     "picture": "https://media.licdn.com/dms/image/v2/D4E03AQGOERhPBpYhWw/profile-displayphoto-shrink_100_100/B4EZdVXZm1HgAU-/0/1749483888367?e=1761782400&v=beta&t=asWq6Es4N10elnxcbk7ZbwWII_8RRm6WctnsZzMrgQk",
     "email": "lukexng@gmail.com",
-    "summary": "I'm a fullstack software enginneer that able work with frontend / backend / Infra / CI/CD / Machine & Deep learning / Mobile development. I am also curerntly a lead of a team. Currently interested in exploring more on deep learning",
+    "summary": "Fullstack software engineer with expertise in frontend, backend, infrastructure, CI/CD, machine learning, deep learning, and mobile development. Currently leading a team while actively exploring advancements in deep learning technologies.",
     "location": {
       "city": "Tokyo"
     },
-    "profiles": [{
+    "profiles": [
+      {
         "network": "LinkedIn",
         "url": "https://www.linkedin.com/in/allen-ng-00768882/"
       },
@@ -26,11 +27,11 @@
       "startDate": "2021-09-01",
       "summary": "MetLife is an international insurance company.",
       "highlights": [
-        "Managing a small team which focusing on providing internal automation platform such as Chef, Ansible and Terraform to internal users.",
-        "Onboard and coach other teams to work in agile and modern IaC practice and different automation tools.",
-        "Created fully automated server provisioning with terraform and packer together with golang to quickly scales servers on-premises data centers and Azure",
-        "Collaborate and hands-on implementation with many teams to automate legacy manual tasks using Chef and Ansible.",
-        "Managing all Japan server footprints by optimizing Chef, Ensuring all machines match with the security standards."
+        "Lead a small team focused on delivering internal automation platforms (Chef, Ansible, Terraform) to enable self-service infrastructure management.",
+        "Onboard and mentor teams in agile methodologies, IaC best practices, and modern automation tooling.",
+        "Architected and implemented fully automated server provisioning using Terraform, Packer, and Golang to enable rapid scaling across on-premises data centers and Azure.",
+        "Collaborated hands-on with multiple teams to automate legacy manual processes using Chef and Ansible.",
+        "Manage Japan's entire server infrastructure through Chef optimization, ensuring continuous compliance with security standards."
       ]
     },
     {
@@ -40,53 +41,53 @@
       "endDate": "2021-08-31",
       "summary": "Zeals is industry leader of chatbot commerce in Japan",
       "highlights": [
-        "Managing a team of 10 which is a combination of Japanese and English speakers, helping to bridge the communication gap between the team and managing overall tasks in the team",
-        "Handling High level design and system architecture",
-        "Working closely with CTO to develop on technical strategies and how to bring product requirements into achievable goals",
-        "Hands-on tasks on building microservices, including protobuf definition, implementation of the services in grpc and golang",
-        "Hands-on tasks on handling infrastructure tasks, working mainly of CI/CD and IaaS to ensure the infrastructure is automated and manageable, including kubernetes, pulumi, circleci, argocd, etc.",
-        "Handling recruitment on both golang engineer and SRE engineer, have been doing technical interview for more than 50 candidates in the past year.",
-        "Driven on test automation on both unit tests inside the microservices, E2E tests across microservices and E2E tests for having headless browser to simulating actual user behavior"
+        "Led a diverse team of 10 engineers (Japanese and non-Japanese speakers), bridging communication gaps and managing cross-functional collaboration.",
+        "Designed high-level system architecture and technical roadmaps for microservices infrastructure.",
+        "Partnered with CTO to translate business requirements into technical strategies and deliverable engineering goals.",
+        "Hands-on development of microservices: protobuf schema design, gRPC service implementation in Golang.",
+        "Managed infrastructure automation: Kubernetes, Pulumi, CircleCI, ArgoCD, ensuring scalable and maintainable IaaS.",
+        "Conducted technical interviews for Golang and SRE positions, screening 50+ candidates.",
+        "Championed test automation: unit tests, cross-service E2E tests, and headless browser testing for user behavior simulation."
       ]
     },
     {
       "company": "Zeals",
-      "position": "Software Enginneer",
+      "position": "Software Engineer",
       "startDate": "2020-04-01",
       "endDate": "2020-12-31",
       "summary": "Zeals is industry leader of chatbot commerce in Japan",
       "highlights": [
-        "Handling daily infrastrcture requirements and continuously improving CI/CD, monitoring, machine learning pipelines and development workflows",
-        "Participart in microservices development in golang, constructed a microservice alone",
-        "Handling technicaly interview for foreign engineers for SRE / go engineer",
-        "Participle as a initial member of developing new product"
+        "Managed daily infrastructure requirements while continuously improving CI/CD, monitoring, ML pipelines, and development workflows.",
+        "Contributed to microservices development in Golang, independently building a complete microservice from scratch.",
+        "Conducted technical interviews for international SRE and Golang engineer candidates.",
+        "Joined as an initial team member for new product development."
       ]
     },
     {
       "company": "PICKUPP",
-      "position": "Lead Software Enginneer",
+      "position": "Lead Software Engineer",
       "startDate": "2019-09-01",
       "endDate": "2020-03-31",
       "summary": "Pickupp is a cloud sourced delivery platform startup. Operating in HK, SG, MY, VN.",
       "highlights": [
-        "Team lead of operation product team, which mainly work on optimizing performance, workflows and matching process",
-        "Handling feature request from business site, craft and implement feature in both backend and frontend",
-        "Maintainance whole stack of the application",
-        "Implemented data solution on aws using AWS S3, Glue, Redshift, Firehose, Pyspark",
-        "Lead Enginneer on one of the mobile app written in react-native",
-        "Implemented own geocoding logic by segmentation and tagging of addresses",
-        "Train Deep learning models to handle image classification"
+        "Led operations product team, focusing on performance optimization, workflow improvements, and delivery matching algorithms.",
+        "Gathered business requirements and delivered full-stack features (backend + frontend).",
+        "Maintained and evolved the entire application stack.",
+        "Designed and implemented data solutions using AWS (S3, Glue, Redshift, Firehose, PySpark).",
+        "Led development of a React Native mobile application.",
+        "Developed custom geocoding algorithms using address segmentation and tagging for complex multilingual addresses.",
+        "Trained deep learning models for image classification tasks."
       ]
     },
     {
       "company": "PICKUPP",
-      "position": "Software Enginneer",
+      "position": "Software Engineer",
       "startDate": "2019-03-01",
       "endDate": "2019-08-31"
     },
     {
       "company": "PICKUPP",
-      "position": "Junior Software Enginneer",
+      "position": "Junior Software Engineer",
       "startDate": "2018-03-01",
       "endDate": "2019-01-31"
     },
@@ -95,7 +96,7 @@
       "position": "IT System Developer",
       "startDate": "2017-07-15",
       "endDate": "2018-02-28",
-      "summary": "ABC Cooking Studio is an internation chain cooking studio brand, operating in JP, KR, TW, CN, HK, etc.",
+      "summary": "ABC Cooking Studio is an international chain cooking studio brand, operating in Japan, Korea, Taiwan, China, Hong Kong, and more.",
       "highlights": [
         "Maintaining entire company’s system, create kubernetes cluster to improve Devops",
         "Refactor old web applications from PHP to nodejs",
@@ -108,22 +109,25 @@
       "position": "Part-time Web Developer",
       "startDate": "2014-12-01",
       "endDate": "2015-08-31",
-      "summary": "Pesely is a tranditional company that selling packing materials, wanted to expand to online business.",
+      "summary": "Pesely is a traditional packing materials company transitioning to e-commerce.",
       "highlights": [
-        "Deploy Magento online store",
-        "Develop backend system used inside the company and able to export products to Magento",
-        "Provide business strategy for online e-commerce"
+        "Deployed Magento e-commerce platform.",
+        "Developed internal backend system with Magento integration for product management.",
+        "Provided strategic guidance for online business expansion."
       ]
     }
   ],
-  "education": [{
-    "institution": "THE HONG KONG POLYTECHNIC UNIVERSITY",
-    "area": "Computing (Enterprise Information System)",
-    "studyType": "Bachelor",
-    "startDate": "2013-09-01",
-    "endDate": "2017-08-31"
-  }],
-  "skills": [{
+  "education": [
+    {
+      "institution": "THE HONG KONG POLYTECHNIC UNIVERSITY",
+      "area": "Computing (Enterprise Information System)",
+      "studyType": "Bachelor",
+      "startDate": "2013-09-01",
+      "endDate": "2017-08-31"
+    }
+  ],
+  "skills": [
+    {
       "name": "Frontend Development",
       "level": "Master",
       "keywords": [
@@ -190,7 +194,8 @@
       ]
     }
   ],
-  "languages": [{
+  "languages": [
+    {
       "language": "Cantonese",
       "fluency": "Native speaker"
     },
@@ -199,7 +204,7 @@
       "fluency": "Fluent"
     },
     {
-      "language": "Mandrain",
+      "language": "Mandarin",
       "fluency": "Fluent"
     },
     {
@@ -207,7 +212,8 @@
       "fluency": "Fluent"
     }
   ],
-  "interests": [{
+  "interests": [
+    {
       "name": "Indoor",
       "keywords": [
         "Playing computer games",

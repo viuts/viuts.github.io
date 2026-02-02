@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Allen Ng — Lead Software Enginneer</title>
+  <title>Allen Ng — Lead Software Engineer</title>
 
   <!-- Google Fonts: JetBrains Mono for code aesthetic -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -50,6 +50,34 @@
       border-bottom: 2px solid var(--fg);
       padding-bottom: 8px;
       margin-bottom: 16px;
+    }
+
+    /* Profile picture */
+    .profile-header {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      margin-bottom: 16px;
+    }
+
+    @media (min-width: 600px) {
+      .profile-header {
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 24px;
+      }
+    }
+
+    .profile-pic {
+      width: 80px;
+      height: 80px;
+      border-radius: 8px;
+      object-fit: cover;
+      border: 2px solid var(--border);
+    }
+
+    .profile-info {
+      flex: 1;
     }
 
     h2 {
@@ -117,9 +145,23 @@
 
     /* Experience items */
     .experience-item {
-      margin-bottom: 24px;
+      margin-bottom: 32px;
       page-break-inside: avoid;
       break-inside: avoid;
+    }
+
+    .company-header {
+      margin-bottom: 16px;
+    }
+
+    .position-block {
+      margin-bottom: 16px;
+      padding-left: 16px;
+      border-left: 2px solid var(--code-bg);
+    }
+
+    .position-block:last-child {
+      margin-bottom: 0;
     }
 
     .item-header {
@@ -301,18 +343,23 @@
 
   <!-- Header -->
   <header>
-    <h1># Allen Ng</h1>
-    <div class="label">Lead Software Enginneer</div>
+    <div class="profile-header">
+      <img src="https://media.licdn.com/dms/image/v2/D4E03AQGOERhPBpYhWw/profile-displayphoto-shrink_100_100/B4EZdVXZm1HgAU-/0/1749483888367?e&#x3D;1761782400&amp;v&#x3D;beta&amp;t&#x3D;asWq6Es4N10elnxcbk7ZbwWII_8RRm6WctnsZzMrgQk" alt="Allen Ng" class="profile-pic">
+      <div class="profile-info">
+        <h1># Allen Ng</h1>
+        <div class="label">Lead Software Engineer</div>
+      </div>
+    </div>
 
     <div class="contact-info">
       <a href="mailto:lukexng@gmail.com" class="contact-item">lukexng@gmail.com</a>
-      <span class="contact-item">Tokyo, </span>
+      <span class="contact-item">Tokyo</span>
       <a href="https://www.linkedin.com/in/allen-ng-00768882/" target="_blank" class="contact-item">LinkedIn</a>
       <a href="https://github.com/viuts" target="_blank" class="contact-item">Github</a>
     </div>
 
     <div class="summary">
-      I&#x27;m a fullstack software enginneer that able work with frontend / backend / Infra / CI/CD / Machine &amp; Deep learning / Mobile development. I am also curerntly a lead of a team. Currently interested in exploring more on deep learning
+      Fullstack software engineer with expertise in frontend, backend, infrastructure, CI/CD, machine learning, deep learning, and mobile development. Currently leading a team while actively exploring advancements in deep learning technologies.
     </div>
   </header>
 
@@ -320,140 +367,157 @@
   <section>
     <h2>## Experience</h2>
     <div class="experience-item">
-      <div class="item-header">
-        <div>
-          <h3 class="item-title">### Lead Infrastructure Engineer</h3>
-          <div class="item-company">MetLife</div>
-        </div>
-        <div class="item-date">
-          September 2021 — Present
-        </div>
+      <div class="company-header">
+        <h3 class="item-title">### MetLife</h3>
       </div>
-      <p class="item-summary">MetLife is an international insurance company.</p>
-      <ul>
-        <li>Managing a small team which focusing on providing internal automation platform such as Chef, Ansible and Terraform to internal users.</li>
-        <li>Onboard and coach other teams to work in agile and modern IaC practice and different automation tools.</li>
-        <li>Created fully automated server provisioning with terraform and packer together with golang to quickly scales servers on-premises data centers and Azure</li>
-        <li>Collaborate and hands-on implementation with many teams to automate legacy manual tasks using Chef and Ansible.</li>
-        <li>Managing all Japan server footprints by optimizing Chef, Ensuring all machines match with the security standards.</li>
-      </ul>
-    </div>
-    <div class="experience-item">
-      <div class="item-header">
-        <div>
-          <h3 class="item-title">### Head of microservices</h3>
-          <div class="item-company">Zeals</div>
+      <div class="position-block">
+        <div class="item-header">
+          <div>
+            <div class="item-company">Lead Infrastructure Engineer</div>
+          </div>
+          <div class="item-date">
+            September 2021 — Present
+          </div>
         </div>
-        <div class="item-date">
-          January 2021 — August 2021
-        </div>
-      </div>
-      <p class="item-summary">Zeals is industry leader of chatbot commerce in Japan</p>
-      <ul>
-        <li>Managing a team of 10 which is a combination of Japanese and English speakers, helping to bridge the communication gap between the team and managing overall tasks in the team</li>
-        <li>Handling High level design and system architecture</li>
-        <li>Working closely with CTO to develop on technical strategies and how to bring product requirements into achievable goals</li>
-        <li>Hands-on tasks on building microservices, including protobuf definition, implementation of the services in grpc and golang</li>
-        <li>Hands-on tasks on handling infrastructure tasks, working mainly of CI/CD and IaaS to ensure the infrastructure is automated and manageable, including kubernetes, pulumi, circleci, argocd, etc.</li>
-        <li>Handling recruitment on both golang engineer and SRE engineer, have been doing technical interview for more than 50 candidates in the past year.</li>
-        <li>Driven on test automation on both unit tests inside the microservices, E2E tests across microservices and E2E tests for having headless browser to simulating actual user behavior</li>
-      </ul>
-    </div>
-    <div class="experience-item">
-      <div class="item-header">
-        <div>
-          <h3 class="item-title">### Software Enginneer</h3>
-          <div class="item-company">Zeals</div>
-        </div>
-        <div class="item-date">
-          April 2020 — December 2020
-        </div>
-      </div>
-      <p class="item-summary">Zeals is industry leader of chatbot commerce in Japan</p>
-      <ul>
-        <li>Handling daily infrastrcture requirements and continuously improving CI/CD, monitoring, machine learning pipelines and development workflows</li>
-        <li>Participart in microservices development in golang, constructed a microservice alone</li>
-        <li>Handling technicaly interview for foreign engineers for SRE / go engineer</li>
-        <li>Participle as a initial member of developing new product</li>
-      </ul>
-    </div>
-    <div class="experience-item">
-      <div class="item-header">
-        <div>
-          <h3 class="item-title">### Lead Software Enginneer</h3>
-          <div class="item-company">PICKUPP</div>
-        </div>
-        <div class="item-date">
-          September 2019 — March 2020
-        </div>
-      </div>
-      <p class="item-summary">Pickupp is a cloud sourced delivery platform startup. Operating in HK, SG, MY, VN.</p>
-      <ul>
-        <li>Team lead of operation product team, which mainly work on optimizing performance, workflows and matching process</li>
-        <li>Handling feature request from business site, craft and implement feature in both backend and frontend</li>
-        <li>Maintainance whole stack of the application</li>
-        <li>Implemented data solution on aws using AWS S3, Glue, Redshift, Firehose, Pyspark</li>
-        <li>Lead Enginneer on one of the mobile app written in react-native</li>
-        <li>Implemented own geocoding logic by segmentation and tagging of addresses</li>
-        <li>Train Deep learning models to handle image classification</li>
-      </ul>
-    </div>
-    <div class="experience-item">
-      <div class="item-header">
-        <div>
-          <h3 class="item-title">### Software Enginneer</h3>
-          <div class="item-company">PICKUPP</div>
-        </div>
-        <div class="item-date">
-          March 2019 — August 2019
-        </div>
+        <p class="item-summary">MetLife is an international insurance company.</p>
+        <ul>
+          <li>Lead a small team focused on delivering internal automation platforms (Chef, Ansible, Terraform) to enable self-service infrastructure management.</li>
+          <li>Onboard and mentor teams in agile methodologies, IaC best practices, and modern automation tooling.</li>
+          <li>Architected and implemented fully automated server provisioning using Terraform, Packer, and Golang to enable rapid scaling across on-premises data centers and Azure.</li>
+          <li>Collaborated hands-on with multiple teams to automate legacy manual processes using Chef and Ansible.</li>
+          <li>Manage Japan&#x27;s entire server infrastructure through Chef optimization, ensuring continuous compliance with security standards.</li>
+        </ul>
       </div>
     </div>
     <div class="experience-item">
-      <div class="item-header">
-        <div>
-          <h3 class="item-title">### Junior Software Enginneer</h3>
-          <div class="item-company">PICKUPP</div>
+      <div class="company-header">
+        <h3 class="item-title">### Zeals</h3>
+      </div>
+      <div class="position-block">
+        <div class="item-header">
+          <div>
+            <div class="item-company">Head of microservices</div>
+          </div>
+          <div class="item-date">
+            January 2021 — August 2021
+          </div>
         </div>
-        <div class="item-date">
-          March 2018 — January 2019
+        <p class="item-summary">Zeals is industry leader of chatbot commerce in Japan</p>
+        <ul>
+          <li>Led a diverse team of 10 engineers (Japanese and non-Japanese speakers), bridging communication gaps and managing cross-functional collaboration.</li>
+          <li>Designed high-level system architecture and technical roadmaps for microservices infrastructure.</li>
+          <li>Partnered with CTO to translate business requirements into technical strategies and deliverable engineering goals.</li>
+          <li>Hands-on development of microservices: protobuf schema design, gRPC service implementation in Golang.</li>
+          <li>Managed infrastructure automation: Kubernetes, Pulumi, CircleCI, ArgoCD, ensuring scalable and maintainable IaaS.</li>
+          <li>Conducted technical interviews for Golang and SRE positions, screening 50+ candidates.</li>
+          <li>Championed test automation: unit tests, cross-service E2E tests, and headless browser testing for user behavior simulation.</li>
+        </ul>
+      </div>
+      <div class="position-block">
+        <div class="item-header">
+          <div>
+            <div class="item-company">Software Engineer</div>
+          </div>
+          <div class="item-date">
+            April 2020 — December 2020
+          </div>
+        </div>
+        <p class="item-summary">Zeals is industry leader of chatbot commerce in Japan</p>
+        <ul>
+          <li>Managed daily infrastructure requirements while continuously improving CI/CD, monitoring, ML pipelines, and development workflows.</li>
+          <li>Contributed to microservices development in Golang, independently building a complete microservice from scratch.</li>
+          <li>Conducted technical interviews for international SRE and Golang engineer candidates.</li>
+          <li>Joined as an initial team member for new product development.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="experience-item">
+      <div class="company-header">
+        <h3 class="item-title">### PICKUPP</h3>
+      </div>
+      <div class="position-block">
+        <div class="item-header">
+          <div>
+            <div class="item-company">Lead Software Engineer</div>
+          </div>
+          <div class="item-date">
+            September 2019 — March 2020
+          </div>
+        </div>
+        <p class="item-summary">Pickupp is a cloud sourced delivery platform startup. Operating in HK, SG, MY, VN.</p>
+        <ul>
+          <li>Led operations product team, focusing on performance optimization, workflow improvements, and delivery matching algorithms.</li>
+          <li>Gathered business requirements and delivered full-stack features (backend + frontend).</li>
+          <li>Maintained and evolved the entire application stack.</li>
+          <li>Designed and implemented data solutions using AWS (S3, Glue, Redshift, Firehose, PySpark).</li>
+          <li>Led development of a React Native mobile application.</li>
+          <li>Developed custom geocoding algorithms using address segmentation and tagging for complex multilingual addresses.</li>
+          <li>Trained deep learning models for image classification tasks.</li>
+        </ul>
+      </div>
+      <div class="position-block">
+        <div class="item-header">
+          <div>
+            <div class="item-company">Software Engineer</div>
+          </div>
+          <div class="item-date">
+            March 2019 — August 2019
+          </div>
+        </div>
+      </div>
+      <div class="position-block">
+        <div class="item-header">
+          <div>
+            <div class="item-company">Junior Software Engineer</div>
+          </div>
+          <div class="item-date">
+            March 2018 — January 2019
+          </div>
         </div>
       </div>
     </div>
     <div class="experience-item">
-      <div class="item-header">
-        <div>
-          <h3 class="item-title">### IT System Developer</h3>
-          <div class="item-company">ABC COOKING STUDIO HONG KONG LTD.</div>
-        </div>
-        <div class="item-date">
-          July 2017 — February 2018
-        </div>
+      <div class="company-header">
+        <h3 class="item-title">### ABC COOKING STUDIO HONG KONG LTD.</h3>
       </div>
-      <p class="item-summary">ABC Cooking Studio is an internation chain cooking studio brand, operating in JP, KR, TW, CN, HK, etc.</p>
-      <ul>
-        <li>Maintaining entire company’s system, create kubernetes cluster to improve Devops</li>
-        <li>Refactor old web applications from PHP to nodejs</li>
-        <li>Technologies: JavaScript/Oracle DB/PHP/AWS/Node.js/Typescript</li>
-        <li>Frameworks: JQuery/Nativescript/React.js/Vue.js/AdonisJS/Laravel/CodeIgniter</li>
-      </ul>
+      <div class="position-block">
+        <div class="item-header">
+          <div>
+            <div class="item-company">IT System Developer</div>
+          </div>
+          <div class="item-date">
+            July 2017 — February 2018
+          </div>
+        </div>
+        <p class="item-summary">ABC Cooking Studio is an international chain cooking studio brand, operating in Japan, Korea, Taiwan, China, Hong Kong, and more.</p>
+        <ul>
+          <li>Maintaining entire company’s system, create kubernetes cluster to improve Devops</li>
+          <li>Refactor old web applications from PHP to nodejs</li>
+          <li>Technologies: JavaScript/Oracle DB/PHP/AWS/Node.js/Typescript</li>
+          <li>Frameworks: JQuery/Nativescript/React.js/Vue.js/AdonisJS/Laravel/CodeIgniter</li>
+        </ul>
+      </div>
     </div>
     <div class="experience-item">
-      <div class="item-header">
-        <div>
-          <h3 class="item-title">### Part-time Web Developer</h3>
-          <div class="item-company">PESELY PACKING LTD.</div>
-        </div>
-        <div class="item-date">
-          December 2014 — August 2015
-        </div>
+      <div class="company-header">
+        <h3 class="item-title">### PESELY PACKING LTD.</h3>
       </div>
-      <p class="item-summary">Pesely is a tranditional company that selling packing materials, wanted to expand to online business.</p>
-      <ul>
-        <li>Deploy Magento online store</li>
-        <li>Develop backend system used inside the company and able to export products to Magento</li>
-        <li>Provide business strategy for online e-commerce</li>
-      </ul>
+      <div class="position-block">
+        <div class="item-header">
+          <div>
+            <div class="item-company">Part-time Web Developer</div>
+          </div>
+          <div class="item-date">
+            December 2014 — August 2015
+          </div>
+        </div>
+        <p class="item-summary">Pesely is a traditional packing materials company transitioning to e-commerce.</p>
+        <ul>
+          <li>Deployed Magento e-commerce platform.</li>
+          <li>Developed internal backend system with Magento integration for product management.</li>
+          <li>Provided strategic guidance for online business expansion.</li>
+        </ul>
+      </div>
     </div>
   </section>
 
@@ -537,7 +601,7 @@
           <span class="info-meta"> — Fluent</span>
         </div>
         <div class="info-item">
-          <span class="info-title">Mandrain</span>
+          <span class="info-title">Mandarin</span>
           <span class="info-meta"> — Fluent</span>
         </div>
         <div class="info-item">

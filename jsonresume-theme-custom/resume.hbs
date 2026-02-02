@@ -52,6 +52,34 @@
       margin-bottom: 16px;
     }
 
+    /* Profile picture */
+    .profile-header {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      margin-bottom: 16px;
+    }
+
+    @media (min-width: 600px) {
+      .profile-header {
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 24px;
+      }
+    }
+
+    .profile-pic {
+      width: 80px;
+      height: 80px;
+      border-radius: 8px;
+      object-fit: cover;
+      border: 2px solid var(--border);
+    }
+
+    .profile-info {
+      flex: 1;
+    }
+
     h2 {
       font-family: var(--font-mono);
       font-size: 1.1rem;
@@ -117,9 +145,23 @@
 
     /* Experience items */
     .experience-item {
-      margin-bottom: 24px;
+      margin-bottom: 32px;
       page-break-inside: avoid;
       break-inside: avoid;
+    }
+
+    .company-header {
+      margin-bottom: 16px;
+    }
+
+    .position-block {
+      margin-bottom: 16px;
+      padding-left: 16px;
+      border-left: 2px solid var(--code-bg);
+    }
+
+    .position-block:last-child {
+      margin-bottom: 0;
     }
 
     .item-header {
@@ -301,8 +343,15 @@
 
   <!-- Header -->
   <header>
-    <h1># {{resume.basics.name}}</h1>
-    <div class="label">{{resume.basics.label}}</div>
+    <div class="profile-header">
+      {{#if resume.basics.picture}}
+      <img src="{{resume.basics.picture}}" alt="{{resume.basics.name}}" class="profile-pic">
+      {{/if}}
+      <div class="profile-info">
+        <h1># {{resume.basics.name}}</h1>
+        <div class="label">{{resume.basics.label}}</div>
+      </div>
+    </div>
 
     <div class="contact-info">
       {{#if resume.basics.email}}
@@ -312,7 +361,7 @@
       <span class="contact-item">{{resume.basics.phone}}</span>
       {{/if}}
       {{#if resume.basics.location}}
-      <span class="contact-item">{{resume.basics.location.city}}, {{resume.basics.location.countryCode}}</span>
+      <span class="contact-item">{{resume.basics.location.city}}</span>
       {{/if}}
       {{#if resume.basics.website}}
       <a href="{{resume.basics.website}}" target="_blank" class="contact-item">{{sanitizeURL resume.basics.website}}</a>
@@ -333,27 +382,33 @@
   {{#if resume.work}}
   <section>
     <h2>## Experience</h2>
-    {{#each resume.work}}
+    {{#each (groupByCompany resume.work)}}
     <div class="experience-item">
-      <div class="item-header">
-        <div>
-          <h3 class="item-title">### {{position}}</h3>
-          <div class="item-company">{{company}}</div>
-        </div>
-        <div class="item-date">
-          {{formatMMMMYYYY startDate}} — {{#if endDate}}{{formatMMMMYYYY endDate}}{{else}}Present{{/if}}
-        </div>
+      <div class="company-header">
+        <h3 class="item-title">### {{company}}</h3>
       </div>
-      {{#if summary}}
-      <p class="item-summary">{{nl2br summary}}</p>
-      {{/if}}
-      {{#if highlights}}
-      <ul>
-        {{#each highlights}}
-        <li>{{.}}</li>
-        {{/each}}
-      </ul>
-      {{/if}}
+      {{#each positions}}
+      <div class="position-block">
+        <div class="item-header">
+          <div>
+            <div class="item-company">{{position}}</div>
+          </div>
+          <div class="item-date">
+            {{formatMMMMYYYY startDate}} — {{#if endDate}}{{formatMMMMYYYY endDate}}{{else}}Present{{/if}}
+          </div>
+        </div>
+        {{#if summary}}
+        <p class="item-summary">{{nl2br summary}}</p>
+        {{/if}}
+        {{#if highlights}}
+        <ul>
+          {{#each highlights}}
+          <li>{{.}}</li>
+          {{/each}}
+        </ul>
+        {{/if}}
+      </div>
+      {{/each}}
     </div>
     {{/each}}
   </section>

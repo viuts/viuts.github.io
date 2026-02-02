@@ -83,5 +83,25 @@ module.exports = {
         text = Handlebars.escapeExpression(text || '');
         text = text.substring(0, length);
         return new Handlebars.SafeString(text);
+    },
+    groupByCompany: function(workList) {
+        if (!workList || !Array.isArray(workList)) return [];
+        
+        const grouped = [];
+        const companies = {};
+        
+        workList.forEach(job => {
+            const company = job.company;
+            if (!companies[company]) {
+                companies[company] = {
+                    company: company,
+                    positions: []
+                };
+                grouped.push(companies[company]);
+            }
+            companies[company].positions.push(job);
+        });
+        
+        return grouped;
     }
 };
