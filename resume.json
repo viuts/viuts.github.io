@@ -136,7 +136,8 @@
         "Javascript",
         "React",
         "Vue",
-        "React Native"
+        "React Native",
+        "Flutter"
       ]
     },
     {
@@ -147,7 +148,9 @@
         "golang",
         "PHP",
         "Python",
-        "ORM"
+        "ORM",
+        "gRPC",
+        "Protobuf"
       ]
     },
     {
@@ -184,13 +187,13 @@
     },
     {
       "name": "AI",
-      "level": "Intermediate",
+      "level": "Master",
       "keywords": [
         "Pytorch",
-        "fastai",
         "tensorflow",
         "LLM",
-        "Prompt Engineering"
+        "Prompt Engineering",
+        "Agno"
       ]
     }
   ],
