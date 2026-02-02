@@ -2,13 +2,14 @@
   "basics": {
     "name": "Allen Ng",
     "label": "リードソフトウェアエンジニア",
-    "picture": "https://media.licdn.com/dms/image/v2/D4E03AQGOERhPBpYhWw/profile-displayphoto-shrink_100_100/B4EZdVXZm1HgAU-/0/1749483888367?e=1761782400&v=beta&t=asWq6Es4N10elnxcbk7ZbwWII_8RRm6WctnsZzMrgQk",
+    "picture": "https://media.licdn.com/dms/image/v2/D4E03AQGOERhPBpYhWw/profile-displayphoto-shrink_100_100/B4EZdVXZm1HgAU-/0/1749483888367?e=1771459200&v=beta&t=36xBc7LfqLAy9nABZd7wzvRdIaneBpjIfDNq5DTy1ew",
     "email": "lukexng@gmail.com",
     "summary": "フルスタックソフトウェアエンジニアとして、フロントエンド・バックエンド・インフラ・CI/CD・機械学習・ディープラーニング・モバイル開発など幅広い分野での経験があります。現在はチームリーダーとしても活動しており、特にディープラーニング分野の探求に興味を持っています。",
     "location": {
       "city": "東京"
     },
-    "profiles": [{
+    "profiles": [
+      {
         "network": "LinkedIn",
         "url": "https://www.linkedin.com/in/allen-ng-00768882/"
       },
@@ -113,14 +114,17 @@
       ]
     }
   ],
-  "education": [{
-    "institution": "THE HONG KONG POLYTECHNIC UNIVERSITY",
-    "area": "Computing (Enterprise Information System)",
-    "studyType": "Bachelor",
-    "startDate": "2013-09-01",
-    "endDate": "2017-08-31"
-  }],
-  "skills": [{
+  "education": [
+    {
+      "institution": "THE HONG KONG POLYTECHNIC UNIVERSITY",
+      "area": "Computing (Enterprise Information System)",
+      "studyType": "Bachelor",
+      "startDate": "2013-09-01",
+      "endDate": "2017-08-31"
+    }
+  ],
+  "skills": [
+    {
       "name": "フロントエンド",
       "level": "Master",
       "keywords": [
@@ -187,7 +191,8 @@
       ]
     }
   ],
-  "languages": [{
+  "languages": [
+    {
       "language": "広東語",
       "fluency": "ネイティブ"
     },
@@ -204,7 +209,8 @@
       "fluency": "ビジネスレベル"
     }
   ],
-  "interests": [{
+  "interests": [
+    {
       "name": "インドア",
       "keywords": [
         "ゲーム",
