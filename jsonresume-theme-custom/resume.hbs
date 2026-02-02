@@ -1,0 +1,462 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{resume.basics.name}}{{#if resume.basics.label}} — {{resume.basics.label}}{{/if}}</title>
+
+  <!-- Google Fonts: JetBrains Mono for code aesthetic -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+
+  <style>
+    /* Markdown/Engineer Theme Variables */
+    :root {
+      --bg: #ffffff;
+      --fg: #24292e;
+      --fg-muted: #586069;
+      --fg-subtle: #6a737d;
+      --border: #e1e4e8;
+      --accent: #0366d6;
+      --code-bg: #f6f8fa;
+      --font-mono: 'JetBrains Mono', 'Fira Code', 'Monaco', 'Consolas', monospace;
+      --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: var(--font-sans);
+      background-color: var(--bg);
+      color: var(--fg);
+      line-height: 1.6;
+      padding: 40px 20px;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    /* Markdown-style headers */
+    h1 {
+      font-family: var(--font-mono);
+      font-size: 2rem;
+      font-weight: 700;
+      border-bottom: 2px solid var(--fg);
+      padding-bottom: 8px;
+      margin-bottom: 16px;
+    }
+
+    h2 {
+      font-family: var(--font-mono);
+      font-size: 1.1rem;
+      font-weight: 600;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 4px;
+      margin-top: 32px;
+      margin-bottom: 16px;
+      color: var(--fg);
+    }
+
+    h3 {
+      font-family: var(--font-mono);
+      font-size: 1rem;
+      font-weight: 600;
+      margin-top: 16px;
+      margin-bottom: 8px;
+    }
+
+    /* Code-like styling for labels */
+    .label {
+      font-family: var(--font-mono);
+      font-size: 0.9rem;
+      font-weight: 500;
+      color: var(--fg-muted);
+    }
+
+    /* Contact info as code block */
+    .contact-info {
+      background: var(--code-bg);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 12px;
+      font-family: var(--font-mono);
+      font-size: 0.85rem;
+      margin-bottom: 24px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+
+    .contact-item {
+      color: var(--fg);
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .contact-item::before {
+      content: "▸";
+      color: var(--fg-subtle);
+    }
+
+    /* Summary as blockquote */
+    .summary {
+      border-left: 3px solid var(--border);
+      padding-left: 16px;
+      margin: 24px 0;
+      font-style: italic;
+      color: var(--fg-muted);
+    }
+
+    /* Experience items */
+    .experience-item {
+      margin-bottom: 24px;
+      page-break-inside: avoid;
+      break-inside: avoid;
+    }
+
+    .item-header {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+      margin-bottom: 8px;
+    }
+
+    @media (min-width: 600px) {
+      .item-header {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: baseline;
+      }
+    }
+
+    .item-title {
+      font-family: var(--font-mono);
+      font-weight: 600;
+      font-size: 1rem;
+    }
+
+    .item-company {
+      font-family: var(--font-mono);
+      font-size: 0.9rem;
+      color: var(--fg-muted);
+    }
+
+    .item-date {
+      font-family: var(--font-mono);
+      font-size: 0.85rem;
+      color: var(--fg-subtle);
+    }
+
+    .item-summary {
+      color: var(--fg-muted);
+      margin-bottom: 8px;
+    }
+
+    /* Lists as markdown-style */
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    ul li {
+      position: relative;
+      padding-left: 20px;
+      margin-bottom: 4px;
+    }
+
+    ul li::before {
+      content: "-";
+      position: absolute;
+      left: 0;
+      color: var(--fg-subtle);
+      font-family: var(--font-mono);
+    }
+
+    /* Skills as inline code */
+    .skills-section {
+      margin: 24px 0;
+    }
+
+    .skill-category {
+      margin-bottom: 12px;
+    }
+
+    .skill-label {
+      font-family: var(--font-mono);
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--fg-muted);
+      margin-bottom: 6px;
+    }
+
+    .skill-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .skill-tag {
+      font-family: var(--font-mono);
+      font-size: 0.8rem;
+      background: var(--code-bg);
+      border: 1px solid var(--border);
+      padding: 2px 8px;
+      border-radius: 3px;
+      color: var(--fg);
+    }
+
+    /* Education and Awards */
+    .info-item {
+      margin-bottom: 16px;
+      page-break-inside: avoid;
+    }
+
+    .info-title {
+      font-family: var(--font-mono);
+      font-weight: 600;
+    }
+
+    .info-meta {
+      font-family: var(--font-mono);
+      font-size: 0.85rem;
+      color: var(--fg-subtle);
+    }
+
+    /* Grid layout */
+    .grid-2 {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 32px;
+      margin-top: 24px;
+    }
+
+    @media (min-width: 600px) {
+      .grid-2 {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    /* Links */
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    /* Footer */
+    footer {
+      margin-top: 48px;
+      padding-top: 16px;
+      border-top: 1px solid var(--border);
+      text-align: center;
+      font-family: var(--font-mono);
+      font-size: 0.75rem;
+      color: var(--fg-subtle);
+    }
+
+    /* Print styles */
+    @media print {
+      body {
+        padding: 0;
+        max-width: 100%;
+      }
+
+      .experience-item,
+      .info-item {
+        page-break-inside: avoid;
+        break-inside: avoid;
+      }
+
+      h1,
+      h2,
+      h3 {
+        page-break-after: avoid;
+        break-after: avoid;
+      }
+
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+
+      footer {
+        display: none;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1># {{resume.basics.name}}</h1>
+    <div class="label">{{resume.basics.label}}</div>
+
+    <div class="contact-info">
+      {{#if resume.basics.email}}
+      <a href="mailto:{{resume.basics.email}}" class="contact-item">{{resume.basics.email}}</a>
+      {{/if}}
+      {{#if resume.basics.phone}}
+      <span class="contact-item">{{resume.basics.phone}}</span>
+      {{/if}}
+      {{#if resume.basics.location}}
+      <span class="contact-item">{{resume.basics.location.city}}, {{resume.basics.location.countryCode}}</span>
+      {{/if}}
+      {{#if resume.basics.website}}
+      <a href="{{resume.basics.website}}" target="_blank" class="contact-item">{{sanitizeURL resume.basics.website}}</a>
+      {{/if}}
+      {{#each resume.basics.profiles}}
+      <a href="{{url}}" target="_blank" class="contact-item">{{network}}</a>
+      {{/each}}
+    </div>
+
+    {{#if resume.basics.summary}}
+    <div class="summary">
+      {{nl2br resume.basics.summary}}
+    </div>
+    {{/if}}
+  </header>
+
+  <!-- Experience -->
+  {{#if resume.work}}
+  <section>
+    <h2>## Experience</h2>
+    {{#each resume.work}}
+    <div class="experience-item">
+      <div class="item-header">
+        <div>
+          <h3 class="item-title">### {{position}}</h3>
+          <div class="item-company">{{company}}</div>
+        </div>
+        <div class="item-date">
+          {{formatMMMMYYYY startDate}} — {{#if endDate}}{{formatMMMMYYYY endDate}}{{else}}Present{{/if}}
+        </div>
+      </div>
+      {{#if summary}}
+      <p class="item-summary">{{nl2br summary}}</p>
+      {{/if}}
+      {{#if highlights}}
+      <ul>
+        {{#each highlights}}
+        <li>{{.}}</li>
+        {{/each}}
+      </ul>
+      {{/if}}
+    </div>
+    {{/each}}
+  </section>
+  {{/if}}
+
+  <div class="grid-2">
+    <div>
+      <!-- Skills -->
+      {{#if resume.skills}}
+      <section class="skills-section">
+        <h2>## Skills</h2>
+        {{#each resume.skills}}
+        <div class="skill-category">
+          <div class="skill-label">{{name}}</div>
+          <div class="skill-tags">
+            {{#each keywords}}
+            <code class="skill-tag">{{.}}</code>
+            {{/each}}
+          </div>
+        </div>
+        {{/each}}
+      </section>
+      {{/if}}
+
+      <!-- Languages -->
+      {{#if resume.languages}}
+      <section>
+        <h2>## Languages</h2>
+        {{#each resume.languages}}
+        <div class="info-item">
+          <span class="info-title">{{language}}</span>
+          <span class="info-meta"> — {{fluency}}</span>
+        </div>
+        {{/each}}
+      </section>
+      {{/if}}
+    </div>
+
+    <div>
+      <!-- Education -->
+      {{#if resume.education}}
+      <section>
+        <h2>## Education</h2>
+        {{#each resume.education}}
+        <div class="info-item">
+          <div class="info-title">{{area}}</div>
+          <div class="item-company">{{institution}}</div>
+          <div class="info-meta">
+            {{formatYYYY startDate}} — {{#if endDate}}{{formatYYYY endDate}}{{else}}Present{{/if}}
+          </div>
+        </div>
+        {{/each}}
+      </section>
+      {{/if}}
+
+      <!-- Awards -->
+      {{#if resume.awards}}
+      <section>
+        <h2>## Awards</h2>
+        {{#each resume.awards}}
+        <div class="info-item">
+          <div class="info-title">{{title}}</div>
+          <div class="info-meta">{{awarder}} • {{formatYYYY date}}</div>
+        </div>
+        {{/each}}
+      </section>
+      {{/if}}
+    </div>
+  </div>
+
+  <!-- Projects -->
+  {{#if resume.volunteer}}
+  <section>
+    <h2>## Projects</h2>
+    {{#each resume.volunteer}}
+    <div class="experience-item">
+      <div class="item-header">
+        <div>
+          <h3 class="item-title">### {{organization}}</h3>
+          <div class="item-company">{{position}}</div>
+        </div>
+        <div class="item-date">
+          {{formatMMMMYYYY startDate}} — {{#if endDate}}{{formatMMMMYYYY endDate}}{{else}}Present{{/if}}
+        </div>
+      </div>
+      {{#if summary}}
+      <p class="item-summary">{{nl2br summary}}</p>
+      {{/if}}
+      {{#if highlights}}
+      <ul>
+        {{#each highlights}}
+        <li>{{.}}</li>
+        {{/each}}
+      </ul>
+      {{/if}}
+    </div>
+    {{/each}}
+  </section>
+  {{/if}}
+
+  <footer>
+    Generated with custom MD-style renderer
+  </footer>
+</body>
+
+</html>

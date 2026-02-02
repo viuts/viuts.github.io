@@ -1,0 +1,73 @@
+{
+  "_args": [
+    [
+      "jsonresume-theme-eloquent@4.1.0",
+      "/Users/allen/projects/golang/src/github.com/viuts/viuts.github.io"
+    ]
+  ],
+  "_development": true,
+  "_from": "jsonresume-theme-eloquent@4.1.0",
+  "_id": "jsonresume-theme-eloquent@4.1.0",
+  "_inBundle": false,
+  "_integrity": "sha512-W05n2hUcBTx8HMATPKDoAkJR/KApg1eZUmA18Oz3PNCJR298/DlfqOKQAXFRi4FVuAG0/WqCggT19Ap2+Z0dkQ==",
+  "_location": "/jsonresume-theme-eloquent",
+  "_phantomChildren": {
+    "commander": "2.20.3",
+    "minimist": "0.0.8",
+    "neo-async": "2.6.1",
+    "wordwrap": "0.0.3"
+  },
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "jsonresume-theme-eloquent@4.1.0",
+    "name": "jsonresume-theme-eloquent",
+    "escapedName": "jsonresume-theme-eloquent",
+    "rawSpec": "4.1.0",
+    "saveSpec": null,
+    "fetchSpec": "4.1.0"
+  },
+  "_requiredBy": [
+    "#DEV:/"
+  ],
+  "_resolved": "https://registry.npmjs.org/jsonresume-theme-eloquent/-/jsonresume-theme-eloquent-4.1.0.tgz",
+  "_spec": "4.1.0",
+  "_where": "/Users/allen/projects/golang/src/github.com/viuts/viuts.github.io",
+  "author": {
+    "name": "Thibaud Colas"
+  },
+  "bugs": {
+    "url": "https://github.com/thibaudcolas/jsonresume-theme-eloquent/issues"
+  },
+  "dependencies": {
+    "email-scramble": "^2.0.1",
+    "handlebars": "^4.0.12",
+    "moment": "^2.22.2"
+  },
+  "description": "An eloquent JSON Resume theme: fluent, persuasive, for developers",
+  "devDependencies": {},
+  "engines": {
+    "node": ">=4.0"
+  },
+  "homepage": "https://github.com/thibaudcolas/jsonresume-theme-eloquent",
+  "keywords": [
+    "jsonresume",
+    "jsonresume-theme",
+    "jsonresume-theme-custom",
+    "theme",
+    "custom",
+    "resume",
+    "cv"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "name": "jsonresume-theme-custom",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thibaudcolas/jsonresume-theme-eloquent.git"
+  },
+  "scripts": {
+    "test": "node test/render.js"
+  },
+  "version": "4.1.0"
+}
