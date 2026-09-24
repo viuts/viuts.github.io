@@ -320,6 +320,17 @@
         break-inside: avoid;
       }
 
+      /* multi-role companies are taller than a page: break between roles, not inside one */
+      .experience-item:has(.position-block) {
+        page-break-inside: auto;
+        break-inside: auto;
+      }
+
+      .position-block {
+        page-break-inside: avoid;
+        break-inside: avoid;
+      }
+
       h1,
       h2,
       h3 {
