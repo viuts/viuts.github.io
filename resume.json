@@ -23,15 +23,29 @@
   "work": [
     {
       "company": "MetLife",
-      "position": "Lead Infrastructure Engineer",
-      "startDate": "2021-09-01",
+      "position": "Lead Infrastructure Automation Engineer (Manager)",
+      "startDate": "2025-03-01",
       "summary": "MetLife is an international insurance company.",
       "highlights": [
-        "Lead a small team focused on delivering internal automation platforms (Chef, Ansible, Terraform) to enable self-service infrastructure management.",
-        "Onboard and mentor teams in agile methodologies, IaC best practices, and modern automation tooling.",
-        "Architected and implemented fully automated server provisioning using Terraform, Packer, and Golang to enable rapid scaling across on-premises data centers and Azure.",
-        "Collaborated hands-on with multiple teams to automate legacy manual processes using Chef and Ansible.",
-        "Manage Japan's entire server infrastructure through Chef optimization, ensuring continuous compliance with security standards."
+        "Introduced Ansible to MetLife Japan in alignment with MetLife Global strategy, transforming and automating many legacy workflows with measurable cost reduction.",
+        "Structured workflows and enforced full IaC across multiple areas, establishing an enterprise-level approach to managing the APIM catalog, reverse proxies, and more.",
+        "Built an in-house VM patching solution from 0 to 1 covering the full lifecycle of backup, patching, and rollback on failure, reducing the headcount needed for BAU operations.",
+        "Worked closely with the CTO to introduce a self-service, end-to-end in-house infrastructure platform (React + Go + Azure ML), enabling users to manage their own infrastructure across multiple components.",
+        "Developed an in-house Ping Identity PingAccess Terraform provider, enabling IaC management of complex SSO structures across 1000+ in-house applications.",
+        "Acted as an in-house consultant introducing AI to infrastructure members, conducting workshops that deep dive into daily usage with real tasks."
+      ]
+    },
+    {
+      "company": "MetLife",
+      "position": "Senior Infrastructure Automation Engineer (Assistant Manager)",
+      "startDate": "2021-09-01",
+      "endDate": "2025-02-28",
+      "summary": "MetLife is an international insurance company.",
+      "highlights": [
+        "Introduced Chef as the configuration management tool and rolled it out to ~2,500 VM / physical servers across the entire organization.",
+        "Migrated legacy monitoring, reporting, and deployment practices to current industry standards using Terraform, Splunk, and Chef.",
+        "Developed multiple solutions using various technologies to eliminate manual operations.",
+        "Fully automated and enabled self-service VM provisioning: template creation with Packer, resource creation with Terraform, and configuration management with Chef."
       ]
     },
     {
