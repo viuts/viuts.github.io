@@ -6,8 +6,8 @@
   "main": "index.js",
   "devDependencies": {
     "jsonresume-theme-eloquent": "^4.1.0",
-    "puppeteer": "^24.36.1",
-    "resumed": "^6.1.0"
+    "puppeteer": "^25.12.0",
+    "resumed": "^7.0.0"
   },
   "scripts": {
     "generate": "node build.js",
