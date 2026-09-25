@@ -1,10 +1,10 @@
 {
   "basics": {
     "name": "Allen Ng",
-    "label": "Lead Platform & Infrastructure Engineer | Go, Kubernetes, Terraform, Automation",
+    "label": "Lead Platform Engineer | Enterprise Deployment, Security/SSO & Hands-on Delivery",
     "picture": "https://raw.githubusercontent.com/viuts/viuts.github.io/refs/heads/master/assets/icon.jpeg",
     "email": "lukexng@gmail.com",
-    "summary": "Platform and infrastructure engineering lead with 9+ years of hands-on software engineering across startups and global enterprises. At MetLife Japan, builds internal developer platforms, infrastructure automation, and Infrastructure-as-Code in a regulated financial-services environment, including a custom Terraform provider managing SSO for 1,000+ applications. Previously led a 10-engineer microservices team at Zeals (Go, gRPC, Kubernetes, Pulumi, ArgoCD). Works in English, Japanese, Mandarin, and Cantonese.",
+    "summary": "Hands-on engineering lead with 9+ years shipping production software and infrastructure in regulated enterprises and startups. At MetLife Japan, partners with the CTO and internal teams to turn operational problems into platforms: self-service infrastructure (React, Go), SSO as code across 1,000+ applications, and automated VM patching. Works with technical and business stakeholders in English, Japanese, Mandarin, and Cantonese.",
     "location": {
       "city": "Tokyo"
     },
@@ -30,9 +30,9 @@
         "Partnered with the CTO to design and build an end-to-end self-service infrastructure platform (React, Go, Azure ML), enabling internal users to self-manage infrastructure across multiple components.",
         "Developed an internal Terraform provider for Ping Identity PingAccess, bringing complex SSO configurations for 1,000+ enterprise applications under Infrastructure-as-Code.",
         "Designed and built a 0→1 VM patching platform covering the full lifecycle of backup, patch deployment, and automated rollback on failure, reducing the headcount required for BAU operations.",
+        "Served as internal AI consultant for infrastructure teams, running hands-on workshops that apply AI tools to real day-to-day engineering tasks.",
         "Led the adoption of Ansible across MetLife Japan in alignment with MetLife Global strategy, standardizing infrastructure automation and replacing manual legacy workflows with measurable cost reduction.",
-        "Established enterprise-wide Infrastructure-as-Code practices for the APIM catalog, reverse proxies, and related platform components, enforcing full IaC and standardized change workflows.",
-        "Served as internal AI consultant for infrastructure teams, running hands-on workshops that apply AI tools to real day-to-day engineering tasks."
+        "Established enterprise-wide Infrastructure-as-Code practices for the APIM catalog, reverse proxies, and related platform components, enforcing full IaC and standardized change workflows."
       ]
     },
     {
@@ -53,9 +53,9 @@
       "endDate": "2021-08-31",
       "summary": "Chatbot-commerce leader in Japan.",
       "highlights": [
+        "Partnered with the CTO to translate business requirements into engineering strategy and deliverable goals.",
         "Led a team of 10 engineers across Japanese- and English-speaking members, owning technical execution and cross-functional collaboration.",
         "Owned high-level system architecture and technical roadmaps for the microservices platform.",
-        "Partnered with the CTO to translate business requirements into engineering strategy and deliverable goals.",
         "Designed and implemented Go microservices, including Protobuf schema design and gRPC service implementation.",
         "Owned platform infrastructure and delivery on Kubernetes, Pulumi, CircleCI, and ArgoCD.",
         "Established test automation spanning unit tests, cross-service E2E tests, and headless-browser tests simulating user behavior.",
@@ -129,6 +129,21 @@
   ],
   "skills": [
     {
+      "name": "Software",
+      "keywords": [
+        "Go",
+        "Python",
+        "TypeScript",
+        "Node.js",
+        "React",
+        "React Native",
+        "gRPC",
+        "Protobuf",
+        "Redis",
+        "Message Queues"
+      ]
+    },
+    {
       "name": "Platform & Infrastructure",
       "keywords": [
         "Kubernetes",
@@ -141,21 +156,16 @@
         "GitHub Actions",
         "Azure Pipelines",
         "CircleCI",
-        "Jenkins",
         "Datadog",
         "Splunk"
       ]
     },
     {
-      "name": "Backend",
+      "name": "Identity & Security",
       "keywords": [
-        "Go",
-        "Python",
-        "Node.js",
-        "gRPC",
-        "Protobuf",
-        "Redis",
-        "Message Queues"
+        "PingAccess",
+        "SSO",
+        "Custom Terraform providers"
       ]
     },
     {
@@ -172,21 +182,12 @@
       ]
     },
     {
-      "name": "Frontend",
-      "keywords": [
-        "React",
-        "TypeScript",
-        "Vue",
-        "React Native"
-      ]
-    },
-    {
       "name": "AI / ML",
       "keywords": [
         "PyTorch",
         "TensorFlow",
         "Azure ML",
-        "LLM tooling (Agno)"
+        "Agno (LLM)"
       ]
     }
   ],

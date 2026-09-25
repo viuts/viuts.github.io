@@ -326,9 +326,99 @@
         break-inside: auto;
       }
 
+      /* let long roles flow across pages; keep individual bullets and role headers intact */
       .position-block {
-        page-break-inside: avoid;
+        page-break-inside: auto;
+        break-inside: auto;
+        margin-bottom: 10px;
+      }
+
+      .item-header {
+        break-after: avoid;
+        margin-bottom: 4px;
+      }
+
+      ul li {
         break-inside: avoid;
+        margin-bottom: 2px;
+      }
+
+      /* denser print layout to fit two A4 pages */
+      body {
+        font-size: 12px;
+        line-height: 1.45;
+      }
+
+      h1 {
+        font-size: 1.5rem;
+        padding-bottom: 4px;
+        margin-bottom: 8px;
+      }
+
+      h2 {
+        margin-top: 16px;
+        margin-bottom: 8px;
+      }
+
+      .profile-pic {
+        width: 64px;
+        height: 64px;
+      }
+
+      .profile-header,
+      .company-header {
+        margin-bottom: 8px;
+      }
+
+      .contact-info {
+        padding: 6px 12px;
+        margin-bottom: 12px;
+      }
+
+      .summary {
+        margin: 12px 0;
+      }
+
+      .experience-item {
+        margin-bottom: 14px;
+      }
+
+      .item-summary {
+        margin-bottom: 4px;
+      }
+
+      .grid-2 {
+        margin-top: 0;
+        gap: 24px;
+        grid-template-columns: 2fr 1fr;
+      }
+
+      .skills-section {
+        margin: 0;
+      }
+
+      .skill-category {
+        display: flex;
+        gap: 8px;
+        margin-bottom: 4px;
+      }
+
+      .skill-label {
+        flex: 0 0 90px;
+        margin-bottom: 0;
+      }
+
+      .skill-tags {
+        gap: 4px;
+      }
+
+      .skill-tag {
+        font-size: 0.7rem;
+        padding: 0 6px;
+      }
+
+      .info-item {
+        margin-bottom: 4px;
       }
 
       h1,
@@ -619,6 +709,21 @@
         </div>
       </section>
 
+    </div>
+
+    <div>
+      <!-- Education -->
+      <section>
+        <h2>## Education</h2>
+        <div class="info-item">
+          <div class="info-title">Computing (Enterprise Information System)</div>
+          <div class="item-company">THE HONG KONG POLYTECHNIC UNIVERSITY</div>
+          <div class="info-meta">
+            2013 — 2017
+          </div>
+        </div>
+      </section>
+
       <!-- Languages -->
       <section>
         <h2>## Languages</h2>
@@ -639,21 +744,6 @@
           <span class="info-meta"> — ビジネスレベル</span>
         </div>
       </section>
-    </div>
-
-    <div>
-      <!-- Education -->
-      <section>
-        <h2>## Education</h2>
-        <div class="info-item">
-          <div class="info-title">Computing (Enterprise Information System)</div>
-          <div class="item-company">THE HONG KONG POLYTECHNIC UNIVERSITY</div>
-          <div class="info-meta">
-            2013 — 2017
-          </div>
-        </div>
-      </section>
-
       <!-- Awards -->
     </div>
   </div>

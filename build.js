@@ -43,6 +43,9 @@ async function main() {
   
   // Build Japanese version
   await buildResume('jp/resume.json', 'jp.html', 'jp.pdf');
+
+  // Build Forward Deployed / AI infrastructure variant
+  await buildResume('fde/resume.json', 'fde.html', 'fde.pdf');
   
   console.log('✓ All resumes generated successfully!');
 }
